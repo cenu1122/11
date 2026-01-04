@@ -1,158 +1,91 @@
 <!DOCTYPE html>
 <html lang="bs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MA-BH Namještaj Po Mjeri</title>
-  <meta name="description" content="MA-BH Namještaj Po Mjeri – izrada kuhinja, ormara, plakara i kompletnog namještaja po mjeri u BiH." />
-  <style>
-    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#f7f7f7; color:#333; }
-    header { background:#1f2933; color:#fff; padding:40px 20px; text-align:center; }
-    header h1 { margin:0; font-size:2.2rem; }
-    header p { margin-top:10px; font-size:1.1rem; }
-    nav { background:#111827; padding:10px; text-align:center; }
-    nav a { color:#fff; margin:0 10px; text-decoration:none; font-weight:bold; }
-    nav a:hover { text-decoration:underline; }
-    section { padding:40px 20px; max-width:1100px; margin:auto; }
-    .services, .gallery { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; }
-    .card { background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
-    .card h3 { margin-top:0; }
-    .cta { background:#2563eb; color:#fff; text-align:center; padding:40px 20px; }
-    .cta h2 { margin-top:0; }
-    footer { background:#1f2933; color:#fff; text-align:center; padding:20px; font-size:0.9rem; }
-    .contact-info p { margin:6px 0; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA-BH Namještaj Po Mjeri</title>
+    <meta name="description" content="MA-BH Namještaj Po Mjeri – izrada kuhinja, ormara i namještaja po mjeri u BiH / Custom Made Furniture in Bosnia and Herzegovina.">
+    <style>
+        body { margin:0; font-family: Arial, Helvetica, sans-serif; color:#333; line-height:1.6; }
+        header { background:#222; color:#fff; padding:60px 20px; text-align:center; }
+        header h1 { margin-bottom:10px; font-size:40px; }
+        section { padding:60px 20px; max-width:1100px; margin:auto; }
+        h2 { text-align:center; margin-bottom:40px; font-size:32px; }
+        .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; }
+        .box { border:1px solid #ddd; padding:25px; border-radius:8px; }
+        .lang-switch { position:fixed; top:15px; right:15px; background:#fff; border:1px solid #ccc; border-radius:6px; }
+        .lang-switch button { padding:8px 12px; border:none; background:none; cursor:pointer; }
+        .gallery img { width:100%; border-radius:8px; }
+        footer { background:#222; color:#fff; padding:40px 20px; text-align:center; }
+    </style>
 </head>
 <body>
 
+<div class="lang-switch">
+    <button onclick="setLang('bs')">BS</button>
+    <button onclick="setLang('en')">EN</button>
+    <button onclick="setLang('de')">DE</button>
+</div>
+
 <header>
-  <h1>MA-BH Namještaj Po Mjeri</h1>
-  <p>Kvalitetan namještaj po mjeri – prilagođen vašem prostoru i stilu</p>
+    <h1 data-bs="MA-BH Namještaj Po Mjeri" data-en="MA-BH Custom Made Furniture" data-de="MA-BH Maßgefertigte Möbel"></h1>
+    <p data-bs="Izrada modernog i kvalitetnog namještaja po mjeri u cijeloj BiH."
+       data-en="Modern and high-quality custom made furniture across Bosnia and Herzegovina."
+       data-de="Moderne und hochwertige maßgefertigte Möbel in ganz Bosnien und Herzegowina."></p>
 </header>
 
-<nav>
-  <a href="#o-nama">O nama</a>
-  <a href="#usluge">Usluge</a>
-  <a href="#galerija">Galerija</a>
-  <a href="#kontakt">Kontakt</a>
-</nav>
-
-<section id="o-nama">
-  <h2>O nama</h2>
-  <p>
-    MA-BH Namještaj Po Mjeri je domaći brend specijalizovan za projektovanje, izradu i montažu
-    namještaja po mjeri za stambene i poslovne prostore širom Bosne i Hercegovine. Naš cilj
-    je da svaki prostor pretvorimo u funkcionalno, estetski privlačno i dugotrajno rješenje.
-  </p>
-  <p>
-    Posebnu pažnju posvećujemo detaljima, kvalitetu materijala i preciznoj izradi. Svakom
-    klijentu pristupamo individualno – od prvog mjerenja i savjetovanja, preko izrade
-    idejnog rješenja, do završne montaže. Radimo isključivo po dogovoru i u skladu s vašim
-    željama i budžetom.
-  </p>
+<section>
+    <h2 data-bs="Zašto odabrati nas?" data-en="Why choose us?" data-de="Warum uns wählen?"></h2>
+    <div class="grid">
+        <div class="box" data-bs="Namještaj izrađen 100% po mjeri" data-en="100% custom made furniture" data-de="100% maßgefertigte Möbel"></div>
+        <div class="box" data-bs="Kvalitetni materijali i okovi" data-en="High-quality materials and fittings" data-de="Hochwertige Materialien und Beschläge"></div>
+        <div class="box" data-bs="Moderan dizajn i funkcionalnost" data-en="Modern design and functionality" data-de="Modernes Design und Funktionalität"></div>
+        <div class="box" data-bs="Precizna izrada i montaža" data-en="Precision manufacturing and installation" data-de="Präzise Fertigung und Montage"></div>
+    </div>
 </section>
 
-<section id="usluge">
-  <h2>Naše usluge</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Kuhinje po mjeri</h3>
-      <p>Funkcionalne i moderne kuhinje prilagođene vašem prostoru.</p>
+<section>
+    <h2 data-bs="Naše usluge" data-en="Our services" data-de="Unsere Leistungen"></h2>
+    <div class="grid">
+        <div class="box"><strong data-bs="Kuhinje po mjeri" data-en="Custom kitchens" data-de="Maßgefertigte Küchen"></strong><br>
+        <span data-bs="Funkcionalna rješenja prilagođena vašem prostoru." data-en="Functional solutions tailored to your space."></span></div>
+        <div class="box"><strong data-bs="Ormari i plakari" data-en="Wardrobes and closets" data-de="Schränke und Kleiderschränke"></strong><br>
+        <span data-bs="Ugradbeni i klizni sistemi." data-en="Built-in and sliding systems."></span></div>
+        <div class="box"><strong data-bs="Dnevni boravak" data-en="Living room furniture"></strong></div>
+        <div class="box"><strong data-bs="Spavaće sobe" data-en="Bedrooms"></strong></div>
     </div>
-    <div class="card">
-      <h3>Ormari i plakari</h3>
-      <p>Ugradbeni ormari, klizni sistemi i rješenja za svaki prostor.</p>
-    </div>
-    <div class="card">
-      <h3>Dnevne i spavaće sobe</h3>
-      <p>Namještaj po mjeri za udobnost i estetiku vašeg doma.</p>
-    </div>
-    <div class="card">
-      <h3>Poslovni prostori</h3>
-      <p>Izrada namještaja za kancelarije, lokale i druge poslovne objekte.</p>
-    </div>
-  </div>
 </section>
 
-<section id="galerija">
-  <h2>Galerija radova</h2>
-  <div class="gallery">
-    <div class="card"><img src="images/kuhinja-po-mjeri-1.jpg" alt="Kuhinja po mjeri MA-BH" style="width:100%; border-radius:6px;"><p>Kuhinja po mjeri</p></div>
-    <div class="card"><img src="images/ormar-po-mjeri-1.jpg" alt="Ormar po mjeri MA-BH" style="width:100%; border-radius:6px;"><p>Ugradbeni ormar</p></div>
-    <div class="card"><img src="images/dnevna-soba-po-mjeri-1.jpg" alt="Dnevna soba po mjeri MA-BH" style="width:100%; border-radius:6px;"><p>Dnevna soba po mjeri</p></div>
-    <div class="card"><img src="images/spavaca-soba-po-mjeri-1.jpg" alt="Spavaća soba po mjeri MA-BH" style="width:100%; border-radius:6px;"><p>Spavaća soba po mjeri</p></div>
-    <div class="card"><img src="images/poslovni-prostor-namjestaj-1.jpg" alt="Namještaj za poslovni prostor MA-BH" style="width:100%; border-radius:6px;"><p>Poslovni prostor</p></div>
-  </div>
-    <div class="card">Slika projekta 2</div>
-    <div class="card">Slika projekta 3</div>
-  </div>
+<section>
+    <h2 data-bs="Recenzije klijenata" data-en="Client reviews" data-de="Kundenbewertungen"></h2>
+    <div class="grid">
+        <div class="box" data-bs="Odličan kvalitet i poštivanje rokova." data-en="Excellent quality and on-time delivery."></div>
+        <div class="box" data-bs="Profesionalan pristup i komunikacija." data-en="Professional approach and communication."></div>
+    </div>
 </section>
 
-<section id="recenzije">
-  <h2>Šta kažu naši klijenti</h2>
-  <div class="services">
-    <div class="card">
-      <p>★★★★★</p>
-      <p>"Izuzetno kvalitetna izrada kuhinje po mjeri. Precizno, uredno i u dogovorenom roku."</p>
-      <strong>— Amir K., Tuzla</strong>
+<section>
+    <h2 data-bs="Galerija radova" data-en="Gallery" data-de="Galerie"></h2>
+    <div class="grid gallery">
+        <img src="images/kuhinja-po-mjeri-1.jpg" alt="Custom kitchen">
+        <img src="images/ormar-po-mjeri-1.jpg" alt="Custom wardrobe">
     </div>
-    <div class="card">
-      <p>★★★★★</p>
-      <p>"Od ideje do realizacije – sve profesionalno. Prostor je maksimalno iskorišten."</p>
-      <strong>— Lejla M., Lukavac</strong>
-    </div>
-    <div class="card">
-      <p>★★★★★</p>
-      <p>"Ormari po mjeri su savršeno urađeni. Tačnost u mjeri i vrhunski materijali."</p>
-      <strong>— Edin S., Gračanica</strong>
-    </div>
-    <div class="card">
-      <p>★★★★★</p>
-      <p>"Sve preporuke za MA-BH. Dogovor, cijena i kvalitet na visokom nivou."</p>
-      <strong>— Selma T., Živinice</strong>
-    </div>
-  </div>
-</section>
-
-<section id="zasto-mi">
-  <h2>Zašto izabrati MA-BH Namještaj Po Mjeri?</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Iskustvo i preciznost</h3>
-      <p>Višegodišnje iskustvo u izradi namještaja po mjeri uz maksimalnu tačnost.</p>
-    </div>
-    <div class="card">
-      <h3>Kvalitetni materijali</h3>
-      <p>Koristimo provjerene materijale koji garantuju dugotrajnost i funkcionalnost.</p>
-    </div>
-    <div class="card">
-      <h3>Individualni pristup</h3>
-      <p>Svaki projekat prilagođavamo vašim željama, prostoru i budžetu.</p>
-    </div>
-    <div class="card">
-      <h3>Poštivanje rokova</h3>
-      <p>Dogovoreni rokovi i transparentna komunikacija bez skrivenih troškova.</p>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <h2>Tražite namještaj po mjeri?</h2>
-  <p>Kontaktirajte nas i zatražite besplatnu ponudu.</p>
-</section>
-
-<section id="kontakt">
-  <h2>Kontakt</h2>
-  <div class="contact-info">
-    <p><strong>Telefon:</strong> +387 xx xxx xxx</p>
-    <p><strong>Email:</strong> info@ma-bh-namjestaj.ba</p>
-    <p><strong>Lokacija:</strong> Bosna i Hercegovina</p>
-  </div>
 </section>
 
 <footer>
-  <p>© 2026 MA-BH Namještaj Po Mjeri. Sva prava zadržana.</p>
+    <p data-bs="Kontakt: Telefon / Email" data-en="Contact: Phone / Email" data-de="Kontakt: Telefon / E-Mail"></p>
+    <p>© 2026 MA-BH</p>
 </footer>
+
+<script>
+function setLang(lang) {
+    document.querySelectorAll('[data-bs]').forEach(el => {
+        el.innerHTML = el.getAttribute('data-' + lang);
+    });
+});
+}
+setLang('bs');
+</script>
 
 </body>
 </html>
