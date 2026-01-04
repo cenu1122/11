@@ -1,30 +1,99 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="bs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Prva GitHub Stranica</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 50px;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            font-size: 1.2em;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MA-BH Namještaj Po Mjeri</title>
+  <meta name="description" content="MA-BH Namještaj Po Mjeri – izrada kuhinja, ormara, plakara i kompletnog namještaja po mjeri u BiH." />
+  <style>
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#f7f7f7; color:#333; }
+    header { background:#1f2933; color:#fff; padding:40px 20px; text-align:center; }
+    header h1 { margin:0; font-size:2.2rem; }
+    header p { margin-top:10px; font-size:1.1rem; }
+    nav { background:#111827; padding:10px; text-align:center; }
+    nav a { color:#fff; margin:0 10px; text-decoration:none; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    section { padding:40px 20px; max-width:1100px; margin:auto; }
+    .services, .gallery { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; }
+    .card { background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .card h3 { margin-top:0; }
+    .cta { background:#2563eb; color:#fff; text-align:center; padding:40px 20px; }
+    .cta h2 { margin-top:0; }
+    footer { background:#1f2933; color:#fff; text-align:center; padding:20px; font-size:0.9rem; }
+    .contact-info p { margin:6px 0; }
+  </style>
 </head>
 <body>
-    <h1>Zdravo, svet!</h1>
-    <p>Ovo je moja prva HTML stranica hostovana na GitHub-u.</p>
+
+<header>
+  <h1>MA-BH Namještaj Po Mjeri</h1>
+  <p>Kvalitetan namještaj po mjeri – prilagođen vašem prostoru i stilu</p>
+</header>
+
+<nav>
+  <a href="#o-nama">O nama</a>
+  <a href="#usluge">Usluge</a>
+  <a href="#galerija">Galerija</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="o-nama">
+  <h2>O nama</h2>
+  <p>
+    MA-BH Namještaj Po Mjeri bavi se izradom modernog i funkcionalnog namještaja
+    prilagođenog vašim potrebama. Radimo precizno, kvalitetno i po dogovoru,
+    koristeći provjerene materijale i savremena rješenja.
+  </p>
+</section>
+
+<section id="usluge">
+  <h2>Naše usluge</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Kuhinje po mjeri</h3>
+      <p>Funkcionalne i moderne kuhinje prilagođene vašem prostoru.</p>
+    </div>
+    <div class="card">
+      <h3>Ormari i plakari</h3>
+      <p>Ugradbeni ormari, klizni sistemi i rješenja za svaki prostor.</p>
+    </div>
+    <div class="card">
+      <h3>Dnevne i spavaće sobe</h3>
+      <p>Namještaj po mjeri za udobnost i estetiku vašeg doma.</p>
+    </div>
+    <div class="card">
+      <h3>Poslovni prostori</h3>
+      <p>Izrada namještaja za kancelarije, lokale i druge poslovne objekte.</p>
+    </div>
+  </div>
+</section>
+
+<section id="galerija">
+  <h2>Galerija radova</h2>
+  <div class="gallery">
+    <div class="card">Slika projekta 1</div>
+    <div class="card">Slika projekta 2</div>
+    <div class="card">Slika projekta 3</div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Tražite namještaj po mjeri?</h2>
+  <p>Kontaktirajte nas i zatražite besplatnu ponudu.</p>
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <div class="contact-info">
+    <p><strong>Telefon:</strong> +387 xx xxx xxx</p>
+    <p><strong>Email:</strong> info@ma-bh-namjestaj.ba</p>
+    <p><strong>Lokacija:</strong> Bosna i Hercegovina</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 MA-BH Namještaj Po Mjeri. Sva prava zadržana.</p>
+</footer>
+
 </body>
 </html>
