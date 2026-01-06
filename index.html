@@ -4,82 +4,159 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MA-BH Namještaj po Mjeri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
       color: #333;
     }
 
     header {
       background-color: #2c3e50;
       color: white;
-      padding: 20px 0;
       text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
 
     nav {
       display: flex;
       justify-content: center;
       background-color: #34495e;
+      flex-wrap: wrap;
     }
 
     nav a {
       color: white;
-      padding: 15px 20px;
+      padding: 15px 25px;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
 
     nav a:hover {
       background-color: #1abc9c;
+      transform: scale(1.05);
     }
 
     .language-selector {
       text-align: right;
-      padding: 10px 20px;
+      padding: 15px 20px;
+      background-color: #ecf0f1;
     }
 
     .language-selector button {
       margin-left: 10px;
-      padding: 5px 10px;
+      padding: 8px 15px;
       cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #1abc9c;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .language-selector button:hover {
+      background-color: #16a085;
     }
 
     section {
-      padding: 40px 20px;
-      max-width: 1000px;
+      padding: 60px 20px;
+      max-width: 1200px;
       margin: auto;
     }
 
     h2 {
       color: #2c3e50;
+      margin-bottom: 20px;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.1em;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    ul li {
+      background-color: #1abc9c;
+      color: white;
+      margin: 10px auto;
+      padding: 12px 20px;
+      border-radius: 25px;
+      width: fit-content;
+      transition: 0.3s;
+      cursor: default;
+    }
+
+    ul li:hover {
+      background-color: #16a085;
+      transform: scale(1.05);
     }
 
     .gallery {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      justify-content: center;
     }
 
     .gallery img {
-      width: calc(33% - 20px);
-      border-radius: 8px;
+      width: 300px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .reviews {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .review-card {
+      background-color: #ecf0f1;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 300px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
 
     footer {
       background-color: #2c3e50;
       color: white;
       text-align: center;
-      padding: 20px 0;
+      padding: 30px 20px;
     }
 
-    /* Responsive */
     @media (max-width: 768px) {
       .gallery img {
-        width: calc(50% - 20px);
+        width: 45%;
       }
     }
 
@@ -106,13 +183,14 @@
   <a href="#about" id="nav-about">O nama</a>
   <a href="#services" id="nav-services">Usluge</a>
   <a href="#gallery" id="nav-gallery">Galerija</a>
+  <a href="#reviews" id="nav-reviews">Recenzije</a>
   <a href="#contact" id="nav-contact">Kontakt</a>
 </nav>
 
 <section id="about">
   <h2 id="about-title">O nama</h2>
   <p id="about-text">
-    MA-BH Namještaj po Mjeri nudi vrhunski namještaj po vašim željama. Kreiramo jedinstvene komade koji savršeno pristaju vašem prostoru.
+    MA-BH Namještaj po Mjeri nudi vrhunski namještaj po vašim željama. Kreiramo jedinstvene komade koji savršeno pristaju vašem prostoru. Naš tim stručnjaka koristi kvalitetne materijale i pažljivo dizajnira svaki detalj.
   </p>
 </section>
 
@@ -123,6 +201,7 @@
     <li>Ugradni ormari i kuhinje</li>
     <li>Restauracija i sanacija postojećeg namještaja</li>
     <li>Besplatne konzultacije i dizajn ideje</li>
+    <li>Dostava i montaža</li>
   </ul>
 </section>
 
@@ -132,6 +211,26 @@
     <img src="slika1.jpg" alt="Namještaj 1">
     <img src="slika2.jpg" alt="Namještaj 2">
     <img src="slika3.jpg" alt="Namještaj 3">
+    <img src="slika4.jpg" alt="Namještaj 4">
+    <img src="slika5.jpg" alt="Namještaj 5">
+  </div>
+</section>
+
+<section id="reviews">
+  <h2 id="reviews-title">Recenzije klijenata</h2>
+  <div class="reviews">
+    <div class="review-card">
+      <p>"Odlična usluga i vrhunski namještaj. Preporučujem MA-BH svakome!"</p>
+      <strong>- Emir K.</strong>
+    </div>
+    <div class="review-card">
+      <p>"Brza dostava i profesionalna montaža. Moj novi ormar je savršen!"</p>
+      <strong>- Lejla S.</strong>
+    </div>
+    <div class="review-card">
+      <p>"Izuzetno dizajniran namještaj po mjeri. Svaka pohvala timu MA-BH."</p>
+      <strong>- Adnan T.</strong>
+    </div>
   </div>
 </section>
 
@@ -155,12 +254,14 @@
       'nav-about': 'About Us',
       'nav-services': 'Services',
       'nav-gallery': 'Gallery',
+      'nav-reviews': 'Reviews',
       'nav-contact': 'Contact',
       'about-title': 'About Us',
-      'about-text': 'MA-BH Custom Furniture offers top-quality furniture made to your specifications. We create unique pieces that perfectly fit your space.',
+      'about-text': 'MA-BH Custom Furniture offers top-quality furniture made to your specifications. We create unique pieces that perfectly fit your space. Our team of experts uses high-quality materials and carefully designs every detail.',
       'services-title': 'Services',
-      'services-list': ['Custom Furniture', 'Fitted Wardrobes and Kitchens', 'Restoration of Existing Furniture', 'Free Consultations and Design Ideas'],
+      'services-list': ['Custom Furniture', 'Fitted Wardrobes and Kitchens', 'Restoration of Existing Furniture', 'Free Consultations and Design Ideas', 'Delivery and Assembly'],
       'gallery-title': 'Gallery',
+      'reviews-title': 'Client Reviews',
       'contact-title': 'Contact',
       'contact-text': 'Address: Ul. Primjera 123, Tuzla, BiH<br>Phone: +387 61 123 456<br>Email: info@ma-bh.ba'
     },
@@ -169,12 +270,14 @@
       'nav-about': 'Über uns',
       'nav-services': 'Dienstleistungen',
       'nav-gallery': 'Galerie',
+      'nav-reviews': 'Bewertungen',
       'nav-contact': 'Kontakt',
       'about-title': 'Über uns',
-      'about-text': 'MA-BH Möbel nach Maß bietet hochwertige Möbel nach Ihren Vorgaben. Wir erstellen einzigartige Stücke, die perfekt in Ihren Raum passen.',
+      'about-text': 'MA-BH Möbel nach Maß bietet hochwertige Möbel nach Ihren Vorgaben. Wir erstellen einzigartige Stücke, die perfekt in Ihren Raum passen. Unser Expertenteam verwendet hochwertige Materialien und gestaltet jedes Detail sorgfältig.',
       'services-title': 'Dienstleistungen',
-      'services-list': ['Möbel nach Maß', 'Einbauschränke und Küchen', 'Restaurierung bestehender Möbel', 'Kostenlose Beratung und Designideen'],
+      'services-list': ['Möbel nach Maß', 'Einbauschränke und Küchen', 'Restaurierung bestehender Möbel', 'Kostenlose Beratung und Designideen', 'Lieferung und Montage'],
       'gallery-title': 'Galerie',
+      'reviews-title': 'Kundenbewertungen',
       'contact-title': 'Kontakt',
       'contact-text': 'Adresse: Ul. Primjera 123, Tuzla, BiH<br>Telefon: +387 61 123 456<br>Email: info@ma-bh.ba'
     }
