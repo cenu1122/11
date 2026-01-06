@@ -18,12 +18,12 @@
       background-color: #2c3e50;
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
     }
 
     nav {
@@ -77,31 +77,31 @@
     h2 {
       color: #2c3e50;
       margin-bottom: 20px;
-      font-size: 2em;
+      font-size: 2.5em;
       text-align: center;
     }
 
-    p {
+    p, li {
       line-height: 1.8;
       font-size: 1.1em;
-      text-align: center;
     }
 
     ul {
       list-style-type: none;
       padding: 0;
-      text-align: center;
+      text-align: left;
+      max-width: 800px;
+      margin: 20px auto;
     }
 
     ul li {
       background-color: #1abc9c;
       color: white;
       margin: 10px auto;
-      padding: 12px 20px;
+      padding: 15px 20px;
       border-radius: 25px;
       width: fit-content;
       transition: 0.3s;
-      cursor: default;
     }
 
     ul li:hover {
@@ -136,8 +136,8 @@
     .review-card {
       background-color: #ecf0f1;
       border-radius: 10px;
-      padding: 20px;
-      max-width: 300px;
+      padding: 25px;
+      max-width: 350px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       transition: 0.3s;
     }
@@ -151,7 +151,7 @@
       background-color: #2c3e50;
       color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 40px 20px;
     }
 
     @media (max-width: 768px) {
@@ -171,6 +171,7 @@
 
 <header>
   <h1 id="site-title">MA-BH Namještaj po Mjeri</h1>
+  <p id="header-subtitle">Kreiramo jedinstveni namještaj po vašim željama i prostoru.</p>
 </header>
 
 <div class="language-selector">
@@ -190,19 +191,29 @@
 <section id="about">
   <h2 id="about-title">O nama</h2>
   <p id="about-text">
-    MA-BH Namještaj po Mjeri nudi vrhunski namještaj po vašim željama. Kreiramo jedinstvene komade koji savršeno pristaju vašem prostoru. Naš tim stručnjaka koristi kvalitetne materijale i pažljivo dizajnira svaki detalj.
+    MA-BH Namještaj po Mjeri je lider u izradi kvalitetnog i modernog namještaja po mjeri u Bosni i Hercegovini. Naš cilj je pružiti klijentima jedinstvena rješenja koja savršeno odgovaraju njihovom prostoru i stilu života. Svaki komad namještaja je pažljivo dizajniran, izrađen od visokokvalitetnih materijala i prilagođen specifičnim željama klijenta.
+  </p>
+  <p>
+    Naš tim stručnjaka kombinuje tradiciju stolarskog zanata sa modernim dizajnerskim pristupom. Od planiranja i savjetovanja, preko izrade, do montaže i završne obrade – svaki korak je posvećen detaljima i savršenstvu. S nama, vaša vizija namještaja postaje stvarnost.
   </p>
 </section>
 
 <section id="services">
   <h2 id="services-title">Usluge</h2>
+  <p>
+    Nudimo širok spektar usluga za privatne i poslovne klijente, uključujući:
+  </p>
   <ul id="services-list">
-    <li>Namještaj po mjeri</li>
-    <li>Ugradni ormari i kuhinje</li>
-    <li>Restauracija i sanacija postojećeg namještaja</li>
-    <li>Besplatne konzultacije i dizajn ideje</li>
-    <li>Dostava i montaža</li>
+    <li>Namještaj po mjeri za dnevne sobe, spavaće sobe i kuhinje</li>
+    <li>Ugradni ormari i kuhinjski elementi po dimenzijama prostora</li>
+    <li>Restauracija, sanacija i obnovljeni starih komada namještaja</li>
+    <li>Besplatne konzultacije i izrada 3D dizajn planova</li>
+    <li>Dostava, montaža i kompletna podrška nakon kupovine</li>
+    <li>Kombinacija različitih materijala i stilova prema zahtjevu klijenta</li>
   </ul>
+  <p>
+    Naša filozofija je da namještaj nije samo funkcionalan predmet, već i umjetničko djelo koje oplemenjuje prostor i donosi udobnost u svakodnevni život.
+  </p>
 </section>
 
 <section id="gallery">
@@ -213,6 +224,7 @@
     <img src="slika3.jpg" alt="Namještaj 3">
     <img src="slika4.jpg" alt="Namještaj 4">
     <img src="slika5.jpg" alt="Namještaj 5">
+    <img src="slika6.jpg" alt="Namještaj 6">
   </div>
 </section>
 
@@ -220,16 +232,20 @@
   <h2 id="reviews-title">Recenzije klijenata</h2>
   <div class="reviews">
     <div class="review-card">
-      <p>"Odlična usluga i vrhunski namještaj. Preporučujem MA-BH svakome!"</p>
+      <p>"Odlična usluga i vrhunski namještaj. Svaki komad je pažljivo izrađen i savršeno uklopljen u naš prostor."</p>
       <strong>- Emir K.</strong>
     </div>
     <div class="review-card">
-      <p>"Brza dostava i profesionalna montaža. Moj novi ormar je savršen!"</p>
+      <p>"Profesionalan tim, brza dostava i montaža. Naša kuhinja po mjeri je savršena!"</p>
       <strong>- Lejla S.</strong>
     </div>
     <div class="review-card">
-      <p>"Izuzetno dizajniran namještaj po mjeri. Svaka pohvala timu MA-BH."</p>
+      <p>"Ma-BH je pravi izbor za sve koji žele kvalitetan namještaj i pažnju prema detaljima. Preporučujem ih svima."</p>
       <strong>- Adnan T.</strong>
+    </div>
+    <div class="review-card">
+      <p>"Od konsultacija do finalne montaže, sve je bilo besprijekorno. Kompletna podrška i vrhunska izrada."</p>
+      <strong>- Selma H.</strong>
     </div>
   </div>
 </section>
@@ -241,6 +257,9 @@
     Telefon: +387 61 123 456<br>
     Email: info@ma-bh.ba
   </p>
+  <p>
+    Za sve upite, konsultacije ili izradu ponude, slobodno nas kontaktirajte putem telefona ili e-maila. Radujemo se vašim idejama i željama!
+  </p>
 </section>
 
 <footer>
@@ -251,15 +270,23 @@
   const translations = {
     en: {
       'site-title': 'MA-BH Custom Furniture',
+      'header-subtitle': 'We create unique furniture tailored to your space and wishes.',
       'nav-about': 'About Us',
       'nav-services': 'Services',
       'nav-gallery': 'Gallery',
       'nav-reviews': 'Reviews',
       'nav-contact': 'Contact',
       'about-title': 'About Us',
-      'about-text': 'MA-BH Custom Furniture offers top-quality furniture made to your specifications. We create unique pieces that perfectly fit your space. Our team of experts uses high-quality materials and carefully designs every detail.',
+      'about-text': 'MA-BH Custom Furniture is a leader in crafting high-quality, modern furniture in Bosnia and Herzegovina. Our mission is to provide clients with unique solutions that perfectly fit their space and lifestyle. Every piece is carefully designed, made from high-quality materials, and customized to the client\'s specific desires. Our team combines traditional craftsmanship with modern design approaches. From planning and consulting to production, installation, and finishing touches, every step is dedicated to detail and perfection.',
       'services-title': 'Services',
-      'services-list': ['Custom Furniture', 'Fitted Wardrobes and Kitchens', 'Restoration of Existing Furniture', 'Free Consultations and Design Ideas', 'Delivery and Assembly'],
+      'services-list': [
+        'Custom furniture for living rooms, bedrooms, and kitchens',
+        'Fitted wardrobes and kitchen units according to space dimensions',
+        'Restoration and refurbishment of old furniture',
+        'Free consultations and 3D design plans',
+        'Delivery, assembly, and full after-sales support',
+        'Combination of various materials and styles according to client requests'
+      ],
       'gallery-title': 'Gallery',
       'reviews-title': 'Client Reviews',
       'contact-title': 'Contact',
@@ -267,15 +294,23 @@
     },
     de: {
       'site-title': 'MA-BH Möbel nach Maß',
+      'header-subtitle': 'Wir erstellen einzigartige Möbel, die auf Ihren Raum und Ihre Wünsche zugeschnitten sind.',
       'nav-about': 'Über uns',
       'nav-services': 'Dienstleistungen',
       'nav-gallery': 'Galerie',
       'nav-reviews': 'Bewertungen',
       'nav-contact': 'Kontakt',
       'about-title': 'Über uns',
-      'about-text': 'MA-BH Möbel nach Maß bietet hochwertige Möbel nach Ihren Vorgaben. Wir erstellen einzigartige Stücke, die perfekt in Ihren Raum passen. Unser Expertenteam verwendet hochwertige Materialien und gestaltet jedes Detail sorgfältig.',
+      'about-text': 'MA-BH Möbel nach Maß ist führend in der Herstellung hochwertiger, moderner Möbel in Bosnien und Herzegowina. Unser Ziel ist es, Kunden einzigartige Lösungen zu bieten, die perfekt in ihren Raum und Lebensstil passen. Jedes Stück wird sorgfältig entworfen, aus hochwertigen Materialien hergestellt und an die spezifischen Wünsche des Kunden angepasst. Unser Team kombiniert traditionelle Handwerkskunst mit modernem Designansatz. Von der Planung und Beratung über die Produktion, Montage und Endbearbeitung – jeder Schritt widmet sich Details und Perfektion.',
       'services-title': 'Dienstleistungen',
-      'services-list': ['Möbel nach Maß', 'Einbauschränke und Küchen', 'Restaurierung bestehender Möbel', 'Kostenlose Beratung und Designideen', 'Lieferung und Montage'],
+      'services-list': [
+        'Maßgefertigte Möbel für Wohnzimmer, Schlafzimmer und Küchen',
+        'Einbauschränke und Kücheneinheiten nach Raummaßen',
+        'Restaurierung und Aufarbeitung alter Möbel',
+        'Kostenlose Beratung und 3D-Designpläne',
+        'Lieferung, Montage und vollständiger Kundendienst',
+        'Kombination verschiedener Materialien und Stile nach Kundenwunsch'
+      ],
       'gallery-title': 'Galerie',
       'reviews-title': 'Kundenbewertungen',
       'contact-title': 'Kontakt',
