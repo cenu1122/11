@@ -1,213 +1,143 @@
 <!DOCTYPE html>
-<html lang="bs">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Web & Logo Dizajn</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Web & Logo Design</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
+<style>
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f5f5;
+    color:#222;
+}
+header{
+    background:#111;
+    color:#fff;
+    padding:80px 20px;
+    text-align:center;
+}
+nav{
+    background:#000;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    margin:0;
+    padding:10px;
+    flex-wrap:wrap;
+}
+nav ul li{margin:0 15px;}
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav ul li a:hover{color:#00c3ff;}
 
-        header {
-            background: #111;
-            color: #fff;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        nav {
-            background: #000;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 10px;
-            margin: 0;
-            flex-wrap: wrap;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            color: #00c3ff;
-        }
-
-        section {
-            padding: 60px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            border: 1px solid #ddd;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 6px;
-            margin-bottom: 15px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #00c3ff;
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        .btn:hover {
-            background: #0099cc;
-            color: #fff;
-        }
-
-        footer {
-            background: #111;
-            color: #fff;
-            text-align: center;
-            padding: 30px 20px;
-        }
-    </style>
+.lang{
+    text-align:center;
+    padding:15px;
+}
+.lang button{
+    margin:5px;
+    padding:8px 15px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+h2{text-align:center;margin-bottom:40px;}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    text-align:center;
+}
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+}
+.hidden{display:none;}
+</style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<header id="home">
-    <h1>Web & Logo Dizajner</h1>
-    <p>Izrada modernih web stranica i profesionalnih logotipa</p>
-    <a href="#contact" class="btn">Kontaktiraj me</a>
+<header>
+    <h1 id="title">Web & Logo Designer</h1>
+    <p id="subtitle">Professional websites and brand identity</p>
 </header>
 
-<!-- NAVIGACIJA -->
 <nav>
-    <ul>
-        <li><a href="#home">Početna</a></li>
-        <li><a href="#about">O meni</a></li>
-        <li><a href="#services">Usluge</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-    </ul>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
-<!-- O MENI -->
+<div class="lang">
+<button onclick="setLang('bs')">BS</button>
+<button onclick="setLang('de')">DE</button>
+<button onclick="setLang('en')">EN</button>
+</div>
+
+<!-- ABOUT -->
 <section id="about">
-    <div class="section-title">
-        <h2>O meni</h2>
-    </div>
-    <p>
-        Ja sam web i grafički dizajner sa fokusom na izradu modernih,
-        brzih i responzivnih web stranica, kao i profesionalnih logo
-        rješenja za firme i pojedince.
-    </p>
+<h2 id="aboutTitle">About Me</h2>
+<p id="aboutText">
+I design modern, responsive websites and professional logos for businesses and individuals.
+</p>
 </section>
 
-<!-- USLUGE -->
+<!-- SERVICES -->
 <section id="services">
-    <div class="section-title">
-        <h2>Usluge</h2>
-    </div>
-
-    <div class="cards">
-        <div class="card">
-            <h3>Izrada web stranica</h3>
-            <p>Landing stranice, poslovni webovi, portfoliji.</p>
-        </div>
-
-        <div class="card">
-            <h3>Logo dizajn</h3>
-            <p>Moderan i profesionalan vizuelni identitet.</p>
-        </div>
-
-        <div class="card">
-            <h3>Redizajn weba</h3>
-            <p>Unapređenje postojećih stranica.</p>
-        </div>
-    </div>
+<h2 id="servicesTitle">Services</h2>
+<div class="cards">
+<div class="card" id="s1">Website Design</div>
+<div class="card" id="s2">Logo Design</div>
+<div class="card" id="s3">Redesign & Optimization</div>
+</div>
 </section>
 
 <!-- PORTFOLIO -->
 <section id="portfolio">
-    <div class="section-title">
-        <h2>Portfolio</h2>
-    </div>
-
-    <h3>Web stranice</h3>
-    <div class="cards">
-        <div class="card">
-            <img src="images/web1.jpg" alt="Web projekat 1">
-            <p>Poslovna web stranica</p>
-        </div>
-
-        <div class="card">
-            <img src="images/web2.jpg" alt="Web projekat 2">
-            <p>Landing page</p>
-        </div>
-    </div>
-
-    <h3 style="margin-top:40px;">Logo dizajn</h3>
-    <div class="cards">
-        <div class="card">
-            <img src="images/logo1.jpg" alt="Logo 1">
-            <p>Minimalistički logo</p>
-        </div>
-
-        <div class="card">
-            <img src="images/logo2.jpg" alt="Logo 2">
-            <p>Brand identitet</p>
-        </div>
-    </div>
+<h2 id="portfolioTitle">Portfolio</h2>
+<div class="cards">
+<div class="card">Business Website</div>
+<div class="card">Landing Page</div>
+<div class="card">Logo & Branding</div>
+</div>
 </section>
 
-<!-- KONTAKT -->
+<!-- CONTACT -->
 <section id="contact">
-    <div class="section-title">
-        <h2>Kontakt</h2>
-    </div>
-
-    <p>Email: <strong>tvojemail@email.com</strong></p>
-    <p>Telefon / WhatsApp: <strong>+387 XX XXX XXX</strong></p>
+<h2 id="contactTitle">Contact</h2>
+<p>Email: your@email.com</p>
+<p>WhatsApp: +387 XX XXX XXX</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 | Web & Logo Portfolio</p>
+<p>© 2026 Web & Logo Portfolio</p>
 </footer>
 
-</body>
-</html>
+<script>
