@@ -1,7 +1,213 @@
-echo "# BOSNANILESS" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/cenu1122/BOSNANILESS.git
-git push -u origin main
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Web & Logo Dizajn</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #111;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #00c3ff;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00c3ff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0099cc;
+            color: #fff;
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header id="home">
+    <h1>Web & Logo Dizajner</h1>
+    <p>Izrada modernih web stranica i profesionalnih logotipa</p>
+    <a href="#contact" class="btn">Kontaktiraj me</a>
+</header>
+
+<!-- NAVIGACIJA -->
+<nav>
+    <ul>
+        <li><a href="#home">Početna</a></li>
+        <li><a href="#about">O meni</a></li>
+        <li><a href="#services">Usluge</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+    </ul>
+</nav>
+
+<!-- O MENI -->
+<section id="about">
+    <div class="section-title">
+        <h2>O meni</h2>
+    </div>
+    <p>
+        Ja sam web i grafički dizajner sa fokusom na izradu modernih,
+        brzih i responzivnih web stranica, kao i profesionalnih logo
+        rješenja za firme i pojedince.
+    </p>
+</section>
+
+<!-- USLUGE -->
+<section id="services">
+    <div class="section-title">
+        <h2>Usluge</h2>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Izrada web stranica</h3>
+            <p>Landing stranice, poslovni webovi, portfoliji.</p>
+        </div>
+
+        <div class="card">
+            <h3>Logo dizajn</h3>
+            <p>Moderan i profesionalan vizuelni identitet.</p>
+        </div>
+
+        <div class="card">
+            <h3>Redizajn weba</h3>
+            <p>Unapređenje postojećih stranica.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <div class="section-title">
+        <h2>Portfolio</h2>
+    </div>
+
+    <h3>Web stranice</h3>
+    <div class="cards">
+        <div class="card">
+            <img src="images/web1.jpg" alt="Web projekat 1">
+            <p>Poslovna web stranica</p>
+        </div>
+
+        <div class="card">
+            <img src="images/web2.jpg" alt="Web projekat 2">
+            <p>Landing page</p>
+        </div>
+    </div>
+
+    <h3 style="margin-top:40px;">Logo dizajn</h3>
+    <div class="cards">
+        <div class="card">
+            <img src="images/logo1.jpg" alt="Logo 1">
+            <p>Minimalistički logo</p>
+        </div>
+
+        <div class="card">
+            <img src="images/logo2.jpg" alt="Logo 2">
+            <p>Brand identitet</p>
+        </div>
+    </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="contact">
+    <div class="section-title">
+        <h2>Kontakt</h2>
+    </div>
+
+    <p>Email: <strong>tvojemail@email.com</strong></p>
+    <p>Telefon / WhatsApp: <strong>+387 XX XXX XXX</strong></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 | Web & Logo Portfolio</p>
+</footer>
+
+</body>
+</html>
