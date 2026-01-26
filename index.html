@@ -1,39 +1,101 @@
-<!-- frontend/index.html -->
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="sr">
 <head>
-  <meta charset="UTF-8">
-  <title>Servis Plus - Usluge čišćenja i popravaka</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zapšljavanje - Rekrutio</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #1a73e8;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+    header p {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+    section {
+        padding: 40px 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+        color: #1a73e8;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    input, textarea {
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        background-color: #1a73e8;
+        color: white;
+        padding: 15px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #155ab6;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #555;
+    }
+</style>
 </head>
 <body>
-  <h1>Servis Plus</h1>
-  <p>Čišćenje prostora | Odčepljavanje odvoda | Popravak klima uređaja</p>
 
-  <form id="requestForm">
-    <input type="text" name="name" placeholder="Ime i prezime" required>
-    <input type="email" name="contact" placeholder="Email ili telefon" required>
-    <select name="serviceType">
-      <option value="Čišćenje">Čišćenje prostora</option>
-      <option value="Odčepljavanje">Odčepljavanje odvoda</option>
-      <option value="Popravak klima">Popravak klima uređaja</option>
-    </select>
-    <textarea name="description" placeholder="Opis problema"></textarea>
-    <button type="submit">Pošalji upit</button>
-  </form>
+<header>
+    <h1>Zapšljavanje i Marketing</h1>
+    <p>Pronađite kvalifikovane radnike i efikasne kampanje za vaš biznis</p>
+</header>
 
-  <script>
-    document.getElementById('requestForm').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const data = Object.fromEntries(new FormData(e.target).entries());
-      const res = await fetch('http://localhost:5000/api/request', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
-      const msg = await res.json();
-      alert(msg.message);
-    });
-  </script>
+<section>
+    <h2>Za Radnike</h2>
+    <p>Tražite posao u Nemačkoj i Austriji? Prijavite se ovde i naš tim će vam pomoći da nađete idealan posao i obezbedite vizu.</p>
+
+    <h2>Za Poslodavce</h2>
+    <p>Tražite kvalifikovane radnike za vaš projekat? Nudimo proviziju i direktnu saradnju sa kandidatima, bez komplikacija.</p>
+
+    <h2>Prijavite se</h2>
+    <form action="mailto:tvojemail@domena.com" method="post" enctype="text/plain">
+        <input type="text" name="ime" placeholder="Vaše ime" required>
+        <input type="email" name="email" placeholder="Vaš email" required>
+        <textarea name="poruka" rows="5" placeholder="Vaša poruka / zahtev" required></textarea>
+        <button type="submit">Pošaljite prijavu</button>
+    </form>
+</section>
+
+<footer>
+    Kontakt email: <a href="mailto:tvojemail@domena.com">tvojemail@domena.com</a> | © 2026 Rekrutio
+</footer>
+
 </body>
 </html>
