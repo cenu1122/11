@@ -3,164 +3,166 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zapošljavanje Njemačka</title>
+<title>Zapošljavanje Njemačka & Austrija</title>
 
 <style>
+html{
+  scroll-behavior: smooth;
+}
+
 body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f2f2f2;
-    color:#333;
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f4f4f4;
 }
 
 /* HEADER */
-.header{
-    background:#0c4abf;
-    color:white;
-    padding:80px 20px;
-    text-align:center;
+header{
+  background:#0b4edb;
+  color:white;
+  padding:80px 20px;
+  text-align:center;
 }
 
-.header h1{
-    font-size:36px;
-    margin-bottom:20px;
+header h1{
+  font-size:36px;
+  margin-bottom:15px;
 }
 
-.header p{
-    font-size:20px;
+header p{
+  font-size:20px;
 }
 
-/* BUTTONS NA POČETNOJ */
-.buttons{
-    margin-top:30px;
+/* NAV BUTTONS */
+.nav{
+  margin-top:30px;
 }
 
-.buttons a{
-    display:inline-block;
-    margin:10px;
-    padding:15px 25px;
-    background:#1a73e8;
-    color:white;
-    text-decoration:none;
-    font-size:18px;
-    font-weight:bold;
-    border-radius:30px;
+.nav a{
+  display:inline-block;
+  margin:10px;
+  padding:15px 25px;
+  background:white;
+  color:#0b4edb;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:30px;
+  font-size:18px;
 }
 
-.buttons a:hover{
-    background:#063b9e;
+.nav a:hover{
+  background:#e0e0e0;
 }
 
-/* SEKCIJE */
-.section{
-    padding:70px 20px;
-    max-width:1100px;
-    margin:30px auto;
-    background:white;
-    border-radius:10px;
+/* SECTION STYLE */
+section{
+  background:white;
+  max-width:1100px;
+  margin:60px auto;
+  padding:70px 20px;
+  border-radius:12px;
 }
 
-.section h2{
-    text-align:center;
-    font-size:32px;
-    margin-bottom:20px;
+section h2{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:20px;
 }
 
-.section p{
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
+section p{
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
 }
 
-/* POVRATAK */
+/* BACK BUTTON */
 .back{
-    display:block;
-    margin:40px auto 0;
-    width:260px;
-    text-align:center;
-    padding:14px;
-    background:#1a73e8;
-    color:white;
-    font-size:18px;
-    text-decoration:none;
-    border-radius:30px;
+  display:block;
+  margin:40px auto 0;
+  width:280px;
+  text-align:center;
+  padding:15px;
+  background:#0b4edb;
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  border-radius:30px;
 }
 
 .back:hover{
-    background:#0c4abf;
+  background:#06379e;
 }
 </style>
 </head>
 
 <body>
 
-<!-- POČETNA -->
-<div class="header" id="pocetak">
-    <h1>ZAPOŠLJAVANJE NJEMAČKA & AUSTRIJA</h1>
-    <p>Pouzdano povezujemo radnike i poslodavce</p>
+<!-- POČETAK -->
+<header id="top">
+  <h1>ZAPOŠLJAVANJE U NJEMAČKOJ & AUSTRIJI</h1>
+  <p>Pouzdano • Brzo • Transparentno</p>
 
-    <!-- DUGMAD NA POČETNOJ -->
-    <div class="buttons">
-        <a href="#onama">O NAMA</a>
-        <a href="#zastomi">ZAŠTO MI</a>
-        <a href="#usluge">USLUGE</a>
-        <a href="#recenzije">RECENZIJE</a>
-        <a href="#kontakt">KONTAKT</a>
-    </div>
-</div>
+  <div class="nav">
+    <a href="#onama">O NAMA</a>
+    <a href="#zastomi">ZAŠTO MI</a>
+    <a href="#usluge">USLUGE</a>
+    <a href="#recenzije">RECENZIJE</a>
+    <a href="#kontakt">KONTAKT</a>
+  </div>
+</header>
 
 <!-- O NAMA -->
-<div class="section" id="onama">
-    <h2>O NAMA</h2>
-    <p>
-        Sarađujemo direktno sa firmama iz Njemačke i Austrije.
-        Kandidatima nudimo sigurnu i transparentnu saradnju.
-    </p>
-    <a href="#pocetak" class="back">⬆ POVRATAK NA POČETNU</a>
-</div>
+<section id="onama">
+  <h2>O NAMA</h2>
+  <p>
+    Sarađujemo sa provjerenim poslodavcima iz Njemačke i Austrije.
+    Kandidatima nudimo sigurnu i jasnu proceduru zapošljavanja.
+  </p>
+  <a href="#top" class="back">⬆ POVRATAK NA POČETAK</a>
+</section>
 
 <!-- ZAŠTO MI -->
-<div class="section" id="zastomi">
-    <h2>ZAŠTO MI</h2>
-    <p>
-        ✔ Provjereni poslodavci<br>
-        ✔ Brza obrada prijava<br>
-        ✔ Bez skrivenih troškova<br>
-        ✔ Direktna komunikacija
-    </p>
-    <a href="#pocetak" class="back">⬆ POVRATAK NA POČETNU</a>
-</div>
+<section id="zastomi">
+  <h2>ZAŠTO MI</h2>
+  <p>
+    ✔ Provjereni poslodavci<br>
+    ✔ Brza obrada prijava<br>
+    ✔ Bez skrivenih troškova<br>
+    ✔ Direktna komunikacija
+  </p>
+  <a href="#top" class="back">⬆ POVRATAK NA POČETAK</a>
+</section>
 
 <!-- USLUGE -->
-<div class="section" id="usluge">
-    <h2>USLUGE</h2>
-    <p>
-        Zavarivači • Električari • Zidari • Tesari<br>
-        Bravari • Pomoćni radnici • Industrija
-    </p>
-    <a href="#pocetak" class="back">⬆ POVRATAK NA POČETNU</a>
-</div>
+<section id="usluge">
+  <h2>USLUGE</h2>
+  <p>
+    Zavarivači • Električari • Zidari • Tesari<br>
+    Bravari • CNC operateri • Pomoćni radnici
+  </p>
+  <a href="#top" class="back">⬆ POVRATAK NA POČETAK</a>
+</section>
 
 <!-- RECENZIJE -->
-<div class="section" id="recenzije">
-    <h2>RECENZIJE</h2>
-    <p>
-        “Brzo zaposlenje.”<br>
-        “Sve po dogovoru.”<br>
-        “Profesionalan pristup.”
-    </p>
-    <a href="#pocetak" class="back">⬆ POVRATAK NA POČETNU</a>
-</div>
+<section id="recenzije">
+  <h2>RECENZIJE</h2>
+  <p>
+    “Sve je bilo po dogovoru.”<br>
+    “Brzo zaposlenje i dobra plata.”<br>
+    “Preporučujem svima.”
+  </p>
+  <a href="#top" class="back">⬆ POVRATAK NA POČETAK</a>
+</section>
 
 <!-- KONTAKT -->
-<div class="section" id="kontakt">
-    <h2>KONTAKT</h2>
-    <p>
-        📧 Email: tvojmail@email.com<br>
-        📱 WhatsApp / Viber
-    </p>
-    <a href="#pocetak" class="back">⬆ POVRATAK NA POČETNU</a>
-</div>
+<section id="kontakt">
+  <h2>KONTAKT</h2>
+  <p>
+    📧 Email: tvojemail@email.com<br>
+    📱 WhatsApp / Viber
+  </p>
+  <a href="#top" class="back">⬆ POVRATAK NA POČETAK</a>
+</section>
 
 </body>
 </html>
