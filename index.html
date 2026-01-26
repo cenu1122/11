@@ -8,59 +8,73 @@
 <style>
 body{
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f4f6f8;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f2f2f2;
     color:#333;
 }
 
+/* NAVIGACIJA */
+.nav{
+    background:#0c4abf;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+}
+
+.nav a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:bold;
+    margin:5px;
+    padding:10px 15px;
+    background:#1a73e8;
+    border-radius:6px;
+    display:inline-block;
+}
+
+.nav a:hover{
+    background:#063b9e;
+}
+
+/* SEKCIJE */
 .section{
-    padding:60px 20px;
+    padding:70px 20px;
     max-width:1100px;
     margin:auto;
-}
-
-.hero{
-    background:linear-gradient(135deg,#1a73e8,#0c4abf);
-    color:white;
-    text-align:center;
-    padding:80px 20px;
-}
-
-.gray{
-    background:#ffffff;
+    background:white;
+    margin-top:20px;
+    border-radius:8px;
 }
 
 h1{
     text-align:center;
-    font-size:36px;
+    font-size:34px;
     margin-bottom:20px;
 }
 
 p{
+    text-align:center;
     font-size:18px;
     line-height:1.6;
-    text-align:center;
-    max-width:800px;
-    margin:0 auto;
 }
 
-/* DUGME POVRATAK */
-.back-btn{
+/* POVRATAK */
+.back{
     display:block;
-    width:280px;
     margin:40px auto 0;
-    padding:15px;
+    width:260px;
     text-align:center;
+    padding:14px;
     background:#1a73e8;
     color:white;
     font-size:18px;
-    font-weight:bold;
     text-decoration:none;
     border-radius:30px;
-    transition:0.3s;
 }
 
-.back-btn:hover{
+.back:hover{
     background:#0c4abf;
 }
 </style>
@@ -68,84 +82,76 @@ p{
 
 <body>
 
-<!-- POČETAK -->
-<div class="section hero" id="pocetak">
+<!-- DUGMAD ZA SEKCIJE -->
+<div class="nav">
+    <a href="#pocetak">POČETNA</a>
+    <a href="#onama">O NAMA</a>
+    <a href="#zastomi">ZAŠTO MI</a>
+    <a href="#usluge">USLUGE</a>
+    <a href="#recenzije">RECENZIJE</a>
+    <a href="#kontakt">KONTAKT</a>
+</div>
+
+<!-- POČETNA -->
+<div class="section" id="pocetak">
     <h1>ZAPOŠLJAVANJE NJEMAČKA & AUSTRIJA</h1>
     <p>
-        Povezujemo kvalifikovane radnike sa provjerenim poslodavcima.
-        Brzo. Transparentno. Sigurno.
+        Povezujemo radnike sa provjerenim poslodavcima.<br>
+        Brzo • Sigurno • Transparentno
     </p>
 </div>
 
 <!-- O NAMA -->
-<div class="section gray">
+<div class="section" id="onama">
     <h1>O NAMA</h1>
     <p>
-        Specijalizirani smo za zapošljavanje radnika u Njemačkoj i Austriji.
-        Radimo direktno sa firmama i pružamo kompletnu podršku kandidatima.
+        Radimo direktno sa firmama iz Njemačke i Austrije.
+        Kandidatima pružamo potpunu podršku – od prijave do zaposlenja.
     </p>
-
-    <a href="#pocetak" class="back-btn">⬆ POVRATAK NA POČETNU</a>
+    <a href="#pocetak" class="back">⬆ POVRATAK NA POČETNU</a>
 </div>
 
 <!-- ZAŠTO MI -->
-<div class="section">
+<div class="section" id="zastomi">
     <h1>ZAŠTO MI</h1>
     <p>
-        ✔ Transparentan proces<br>
         ✔ Provjereni poslodavci<br>
-        ✔ Brza komunikacija<br>
-        ✔ Bez skrivenih troškova
+        ✔ Jasni dogovori<br>
+        ✔ Bez skrivenih troškova<br>
+        ✔ Brza komunikacija
     </p>
-
-    <a href="#pocetak" class="back-btn">⬆ POVRATAK NA POČETNU</a>
+    <a href="#pocetak" class="back">⬆ POVRATAK NA POČETNU</a>
 </div>
 
 <!-- USLUGE -->
-<div class="section gray">
+<div class="section" id="usluge">
     <h1>USLUGE</h1>
     <p>
-        🔧 Zavarivači, električari, bravari<br>
-        🧱 Zidari, tesari, pomoćni radnici<br>
-        🛠 Industrija, građevina, logistika
+        Zavarivači • Električari • Zidari • Tesari<br>
+        Bravari • Pomoćni radnici • Industrija
     </p>
-
-    <a href="#pocetak" class="back-btn">⬆ POVRATAK NA POČETNU</a>
-</div>
-
-<!-- VIDEO -->
-<div class="section">
-    <h1>VIDEO PREZENTACIJA</h1>
-    <p>
-        Ovdje možeš ubaciti AI video, YouTube link ili promotivni klip
-        za zapošljavanje radnika.
-    </p>
-
-    <a href="#pocetak" class="back-btn">⬆ POVRATAK NA POČETNU</a>
+    <a href="#pocetak" class="back">⬆ POVRATAK NA POČETNU</a>
 </div>
 
 <!-- RECENZIJE -->
-<div class="section gray">
+<div class="section" id="recenzije">
     <h1>RECENZIJE</h1>
     <p>
-        “Brzo sam pronašao posao.”<br>
-        “Sve je bilo po dogovoru.”<br>
+        “Sve po dogovoru.”<br>
+        “Posao pronađen za par dana.”<br>
         “Profesionalna saradnja.”
     </p>
-
-    <a href="#pocetak" class="back-btn">⬆ POVRATAK NA POČETNU</a>
+    <a href="#pocetak" class="back">⬆ POVRATAK NA POČETNU</a>
 </div>
 
 <!-- KONTAKT -->
-<div class="section">
+<div class="section" id="kontakt">
     <h1>KONTAKT</h1>
     <p>
         📧 Email: tvojmail@email.com<br>
-        📱 WhatsApp / Viber<br>
-        🌍 Njemačka / Austrija
+        📱 WhatsApp / Viber
     </p>
-
-    <a href="#pocetak" class="back-btn">⬆ POVRATAK NA POČETNU</a>
+    <a href="#pocetak" class="back">⬆ POVRATAK NA POČETNU</a>
 </div>
 
 </body>
