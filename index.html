@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zapošljavanje – Njemačka & Austrija</title>
+<title>Zapošljavanje Njemačka</title>
 
 <style>
 body{
@@ -13,206 +13,140 @@ body{
     color:#333;
 }
 
-section{
+.section{
     padding:60px 20px;
-}
-
-.container{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
 }
 
-h1,h2{
-    color:#1a73e8;
+.hero{
+    background:linear-gradient(135deg,#1a73e8,#0c4abf);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.gray{
+    background:#ffffff;
+}
+
+h1{
+    text-align:center;
+    font-size:36px;
     margin-bottom:20px;
 }
 
 p{
     font-size:18px;
     line-height:1.6;
-}
-
-/* HERO */
-.hero{
-    background:linear-gradient(rgba(26,115,232,.85),rgba(26,115,232,.85)),
-    url("https://images.unsplash.com/photo-1581092919534-5d7c9b6b7c6b");
-    background-size:cover;
-    background-position:center;
-    color:white;
     text-align:center;
+    max-width:800px;
+    margin:0 auto;
 }
 
-.hero h1{
-    font-size:42px;
-    color:white;
-}
-
-.hero p{
-    font-size:20px;
-}
-
-/* BOX GRID */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.box{
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-/* VIDEO */
-video{
-    width:100%;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,.2);
-}
-
-/* REVIEWS */
-.review{
-    background:#eef2f7;
-    padding:20px;
-    border-radius:10px;
-}
-
-/* FORM */
-form{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-}
-
-input,textarea{
-    padding:12px;
-    font-size:16px;
-    border-radius:8px;
-    border:1px solid #ccc;
-}
-
-button{
+/* DUGME POVRATAK */
+.back-btn{
+    display:block;
+    width:280px;
+    margin:40px auto 0;
     padding:15px;
-    font-size:18px;
+    text-align:center;
     background:#1a73e8;
     color:white;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
 }
 
-button:hover{
-    background:#155ab6;
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:30px;
-    background:#222;
-    color:#aaa;
+.back-btn:hover{
+    background:#0c4abf;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="container">
-        <h1>ZAPOŠLJAVANJE I MARKETING</h1>
-        <p>Povezujemo radnike i poslodavce u Njemačkoj i Austriji</p>
-    </div>
-</section>
+<!-- POČETAK -->
+<div class="section hero" id="pocetak">
+    <h1>ZAPOŠLJAVANJE NJEMAČKA & AUSTRIJA</h1>
+    <p>
+        Povezujemo kvalifikovane radnike sa provjerenim poslodavcima.
+        Brzo. Transparentno. Sigurno.
+    </p>
+</div>
 
 <!-- O NAMA -->
-<section>
-    <div class="container">
-        <h2>O nama</h2>
-        <p>
-            Mi smo agencija specijalizovana za zapošljavanje radnika u Njemačkoj i Austriji,
-            kao i za digitalni marketing koji donosi stvarne rezultate.
-            Radimo transparentno, na proviziju, bez skrivenih troškova.
-        </p>
-    </div>
-</section>
+<div class="section gray">
+    <h1>O NAMA</h1>
+    <p>
+        Specijalizirani smo za zapošljavanje radnika u Njemačkoj i Austriji.
+        Radimo direktno sa firmama i pružamo kompletnu podršku kandidatima.
+    </p>
 
-<!-- ZASTO MI -->
-<section style="background:#ffffff;">
-    <div class="container">
-        <h2>Zašto mi?</h2>
-        <div class="grid">
-            <div class="box">✔ Transparentna saradnja</div>
-            <div class="box">✔ Plaćanje po rezultatu</div>
-            <div class="box">✔ Podrška za vize i dokumentaciju</div>
-            <div class="box">✔ Fokus na kvalitet, ne kvantitet</div>
-        </div>
-    </div>
-</section>
+    <a href="#pocetak" class="back-btn">⬆ POVRATAK NA POČETNU</a>
+</div>
 
-<!-- STA NUDIMO -->
-<section>
-    <div class="container">
-        <h2>Šta nudimo</h2>
-        <div class="grid">
-            <div class="box">
-                <h3>Zapošljavanje</h3>
-                <p>
-                    Električari, varioci, zidari, tesari, pomoćni radnici.
-                    Rad u Njemačkoj i Austriji uz punu podršku.
-                </p>
-            </div>
-            <div class="box">
-                <h3>Marketing</h3>
-                <p>
-                    Instagram, TikTok, YouTube kampanje.
-                    Video oglasi koji dovode prave kandidate.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- ZAŠTO MI -->
+<div class="section">
+    <h1>ZAŠTO MI</h1>
+    <p>
+        ✔ Transparentan proces<br>
+        ✔ Provjereni poslodavci<br>
+        ✔ Brza komunikacija<br>
+        ✔ Bez skrivenih troškova
+    </p>
+
+    <a href="#pocetak" class="back-btn">⬆ POVRATAK NA POČETNU</a>
+</div>
+
+<!-- USLUGE -->
+<div class="section gray">
+    <h1>USLUGE</h1>
+    <p>
+        🔧 Zavarivači, električari, bravari<br>
+        🧱 Zidari, tesari, pomoćni radnici<br>
+        🛠 Industrija, građevina, logistika
+    </p>
+
+    <a href="#pocetak" class="back-btn">⬆ POVRATAK NA POČETNU</a>
+</div>
 
 <!-- VIDEO -->
-<section style="background:#ffffff;">
-    <div class="container">
-        <h2>Promo video</h2>
-        <video controls>
-            <source src="tvoj_video.mp4" type="video/mp4">
-        </video>
-    </div>
-</section>
+<div class="section">
+    <h1>VIDEO PREZENTACIJA</h1>
+    <p>
+        Ovdje možeš ubaciti AI video, YouTube link ili promotivni klip
+        za zapošljavanje radnika.
+    </p>
+
+    <a href="#pocetak" class="back-btn">⬆ POVRATAK NA POČETNU</a>
+</div>
 
 <!-- RECENZIJE -->
-<section>
-    <div class="container">
-        <h2>Iskustva klijenata</h2>
-        <div class="grid">
-            <div class="review">„Radnici stigli brzo i bez problema.“ – Poslodavac, DE</div>
-            <div class="review">„Našao posao i riješio vizu.“ – Radnik</div>
-            <div class="review">„Marketing kampanja nam je donijela prijave.“ – Firma</div>
-        </div>
-    </div>
-</section>
+<div class="section gray">
+    <h1>RECENZIJE</h1>
+    <p>
+        “Brzo sam pronašao posao.”<br>
+        “Sve je bilo po dogovoru.”<br>
+        “Profesionalna saradnja.”
+    </p>
+
+    <a href="#pocetak" class="back-btn">⬆ POVRATAK NA POČETNU</a>
+</div>
 
 <!-- KONTAKT -->
-<section style="background:#ffffff;">
-    <div class="container">
-        <h2>Kontakt / Prijava</h2>
-        <form action="mailto:tvojemail@domena.com" method="post" enctype="text/plain">
-            <input type="text" placeholder="Ime i prezime" required>
-            <input type="email" placeholder="Email" required>
-            <textarea rows="5" placeholder="Da li ste radnik ili poslodavac?" required></textarea>
-            <button>Pošalji</button>
-        </form>
-    </div>
-</section>
+<div class="section">
+    <h1>KONTAKT</h1>
+    <p>
+        📧 Email: tvojmail@email.com<br>
+        📱 WhatsApp / Viber<br>
+        🌍 Njemačka / Austrija
+    </p>
 
-<footer>
-    © 2026 | Zapošljavanje Njemačka & Austrija | tvojemail@domena.com
-</footer>
+    <a href="#pocetak" class="back-btn">⬆ POVRATAK NA POČETNU</a>
+</div>
 
 </body>
 </html>
