@@ -1,85 +1,217 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="bs">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zapšljavanje - Rekrutio</title>
+<title>Zapošljavanje – Njemačka & Austrija</title>
+
 <style>
-    body { font-family: Arial, sans-serif; background-color: #f7f7f7; margin:0; padding:0; }
-    header { background-color: #1a73e8; color: white; text-align: center; padding: 40px 20px; }
-    header h1 { margin:0; font-size: 2.5em; }
-    header p { font-size: 1.2em; margin-top: 10px; }
-    section { padding: 40px 20px; max-width: 900px; margin: 20px auto; background-color: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
-    h2 { color: #1a73e8; }
-    form { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
-    input, textarea { padding: 10px; font-size: 1em; border: 1px solid #ccc; border-radius: 5px; }
-    button { background-color: #1a73e8; color: white; padding: 15px; font-size: 1em; border: none; border-radius: 5px; cursor: pointer; }
-    button:hover { background-color: #155ab6; }
-    footer { text-align: center; padding: 20px; font-size: 0.9em; color: #555; margin-top:20px; }
-    .video-section { text-align:center; margin-top:20px; }
-    .reviews { display:flex; flex-direction: column; gap:15px; margin-top:20px; }
-    .review { background-color: #f1f1f1; padding:15px; border-radius:5px; }
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+    color:#333;
+}
+
+section{
+    padding:60px 20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+h1,h2{
+    color:#1a73e8;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(rgba(26,115,232,.85),rgba(26,115,232,.85)),
+    url("https://images.unsplash.com/photo-1581092919534-5d7c9b6b7c6b");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:42px;
+    color:white;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+/* BOX GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.box{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* VIDEO */
+video{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+/* REVIEWS */
+.review{
+    background:#eef2f7;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* FORM */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,textarea{
+    padding:12px;
+    font-size:16px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:15px;
+    font-size:18px;
+    background:#1a73e8;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#155ab6;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    background:#222;
+    color:#aaa;
+}
 </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Zapšljavanje i Marketing</h1>
-    <p>Pronađite kvalifikovane radnike i efikasne kampanje za vaš biznis</p>
-</header>
-
-<section>
-    <h2>O nama</h2>
-    <p>Rekrutio je profesionalna agencija koja povezuje kvalifikovane radnike sa poslodavcima u Nemačkoj i Austriji. Pomažemo radnicima da pronađu posao i obezbede vizu, a poslodavcima da pronađu najbolje kandidate i optimizuju svoje kampanje na društvenim mrežama.</p>
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1>ZAPOŠLJAVANJE I MARKETING</h1>
+        <p>Povezujemo radnike i poslodavce u Njemačkoj i Austriji</p>
+    </div>
 </section>
 
+<!-- O NAMA -->
 <section>
-    <h2>Zašto mi</h2>
-    <ul>
-        <li>Transparentan sistem provizije i saradnje</li>
-        <li>Iskustvo u regrutaciji i marketingu</li>
-        <li>Podrška pri vizama i smeštaju</li>
-        <li>Kvalitetni radnici i profesionalni marketing</li>
-        <li>Brza i efikasna komunikacija</li>
-    </ul>
+    <div class="container">
+        <h2>O nama</h2>
+        <p>
+            Mi smo agencija specijalizovana za zapošljavanje radnika u Njemačkoj i Austriji,
+            kao i za digitalni marketing koji donosi stvarne rezultate.
+            Radimo transparentno, na proviziju, bez skrivenih troškova.
+        </p>
+    </div>
 </section>
 
-<section class="video-section">
-    <h2>Promo Video</h2>
-    <!-- Ovde ubaci svoj AI video -->
-    <video width="100%" height="auto" controls>
-        <source src="tvoj_video.mp4" type="video/mp4">
-        Vaš pregledač ne podržava video tag.
-    </video>
-</section>
-
-<section>
-    <h2>Recenzije</h2>
-    <div class="reviews">
-        <div class="review">
-            "Odlična saradnja! Našli su nam kvalitetne radnike u roku od nedelju dana." - Marko, poslodavac
-        </div>
-        <div class="review">
-            "Brzo i profesionalno. Preporučujem za sve koji traže posao u inostranstvu." - Ana, radnik
-        </div>
-        <div class="review">
-            "Kampanje za društvene mreže su nam donele više klijenata nego ikada pre!" - Jovan, preduzetnik
+<!-- ZASTO MI -->
+<section style="background:#ffffff;">
+    <div class="container">
+        <h2>Zašto mi?</h2>
+        <div class="grid">
+            <div class="box">✔ Transparentna saradnja</div>
+            <div class="box">✔ Plaćanje po rezultatu</div>
+            <div class="box">✔ Podrška za vize i dokumentaciju</div>
+            <div class="box">✔ Fokus na kvalitet, ne kvantitet</div>
         </div>
     </div>
 </section>
 
+<!-- STA NUDIMO -->
 <section>
-    <h2>Prijavite se</h2>
-    <form action="mailto:tvojemail@domena.com" method="post" enctype="text/plain">
-        <input type="text" name="ime" placeholder="Vaše ime" required>
-        <input type="email" name="email" placeholder="Vaš email" required>
-        <textarea name="poruka" rows="5" placeholder="Vaša poruka / zahtev" required></textarea>
-        <button type="submit">Pošaljite prijavu</button>
-    </form>
+    <div class="container">
+        <h2>Šta nudimo</h2>
+        <div class="grid">
+            <div class="box">
+                <h3>Zapošljavanje</h3>
+                <p>
+                    Električari, varioci, zidari, tesari, pomoćni radnici.
+                    Rad u Njemačkoj i Austriji uz punu podršku.
+                </p>
+            </div>
+            <div class="box">
+                <h3>Marketing</h3>
+                <p>
+                    Instagram, TikTok, YouTube kampanje.
+                    Video oglasi koji dovode prave kandidate.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section style="background:#ffffff;">
+    <div class="container">
+        <h2>Promo video</h2>
+        <video controls>
+            <source src="tvoj_video.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<!-- RECENZIJE -->
+<section>
+    <div class="container">
+        <h2>Iskustva klijenata</h2>
+        <div class="grid">
+            <div class="review">„Radnici stigli brzo i bez problema.“ – Poslodavac, DE</div>
+            <div class="review">„Našao posao i riješio vizu.“ – Radnik</div>
+            <div class="review">„Marketing kampanja nam je donijela prijave.“ – Firma</div>
+        </div>
+    </div>
+</section>
+
+<!-- KONTAKT -->
+<section style="background:#ffffff;">
+    <div class="container">
+        <h2>Kontakt / Prijava</h2>
+        <form action="mailto:tvojemail@domena.com" method="post" enctype="text/plain">
+            <input type="text" placeholder="Ime i prezime" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="5" placeholder="Da li ste radnik ili poslodavac?" required></textarea>
+            <button>Pošalji</button>
+        </form>
+    </div>
 </section>
 
 <footer>
-    Kontakt email: <a href="mailto:tvojemail@domena.com">tvojemail@domena.com</a> | © 2026 Rekrutio
+    © 2026 | Zapošljavanje Njemačka & Austrija | tvojemail@domena.com
 </footer>
 
 </body>
