@@ -1,95 +1,158 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="sr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Glavni SEO meta tagovi -->
-<title>Zapošljavanje Njemačka – RadniciEU</title>
-<meta name="description" content="RadniciEU nudi profesionalne usluge posredovanja pri zapošljavanju u Njemačkoj i Austriji. Pronađite pouzdane poslodavce i najbolje prilike za rad.">
-<meta name="keywords" content="Radnici, Njemačka, zapošljavanje, usluge, recenzije, radnici EU">
-<meta name="author" content="Adis Tokić">
-
-<!-- Open Graph / Facebook meta tagovi -->
-<meta property="og:title" content="Zapošljavanje Njemačka – RadniciEU">
-<meta property="og:description" content="RadniciEU nudi profesionalne usluge posredovanja pri zapošljavanju u Njemačkoj i Austriji. Pronađite pouzdane poslodavce i najbolje prilike za rad.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://radnicieu.site/">
-<meta property="og:image" content="https://radnicieu.site/pocetna.png">
-
-<!-- Twitter Card meta tagovi -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Zapošljavanje Njemačka – RadniciEU">
-<meta name="twitter:description" content="RadniciEU nudi profesionalne usluge posredovanja pri zapošljavanju u Njemačkoj i Austriji. Pronađite pouzdane poslodavce i najbolje prilike za rad.">
-<meta name="twitter:image" content="https://radnicieu.site/pocetna.png">
-
-<!-- Stilovi -->
-<style>
-body {margin:0; font-family:Arial, Helvetica, sans-serif; background:#f4f4f4;}
-header {background:#003cff; color:white; padding:40px 20px; text-align:center;}
-header h1 {font-size:36px;}
-header p {font-size:20px; margin-bottom:20px;}
-header img {max-width:80%; border-radius:12px; margin-top:20px;}
-.nav {text-align:center; margin:20px 0;}
-.nav a {display:inline-block; margin:10px; padding:15px 25px; background:white; color:#003cff; font-weight:bold; text-decoration:none; border-radius:30px; font-size:18px;}
-.nav a:hover {background:#e0e0e0;}
-section {max-width:1000px; margin:40px auto; padding:60px 20px; background:white; border-radius:12px; text-align:center;}
-section h2 {font-size:32px; margin-bottom:20px;}
-section p {font-size:18px; line-height:1.6; margin-bottom:20px;}
-section ul {list-style:none; padding:0;}
-section ul li {font-size:18px; margin:8px 0;}
-footer {text-align:center; padding:20px; background:#003cff; color:white;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCA2017 - Metalne Obrade</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; }
+        header { background: #333; color: #fff; padding: 20px; text-align:center; }
+        nav { display: flex; justify-content: center; background: #444; }
+        nav button { margin: 10px; padding: 10px 20px; cursor: pointer; border:none; background: #666; color: #fff; }
+        nav button:hover { background: #888; }
+        section { padding: 50px 20px; text-align:center; }
+        section img { max-width: 80%; height: auto; margin-top: 20px; }
+        .lang-btn { position: fixed; top: 10px; right: 10px; margin-left:5px; padding:5px 10px; cursor:pointer; }
+    </style>
 </head>
-
 <body>
 
 <header>
-  <h1>Radnici EU – Zapošljavanje u Njemačkoj</h1>
-  <p>Pronađite posao kao bravari, varioci, električari, zidari, tesari ili pomoćni radnici.</p>
-  <p>Satnica: 17–22 €/h | Kontakt: <a href="mailto:info@radnicieu.site" style="color:white; text-decoration:underline;">info@radnicieu.site</a></p>
+    <h1 id="title">MCA2017 - Metalne Obrade</h1>
 </header>
 
-<nav class="nav">
-  <a href="#o-nama">O Nama</a>
-  <a href="#usluge">Usluge</a>
-  <a href="#recenzije">Recenzije</a>
-  <a href="#kontakt">Kontakt</a>
+<!-- Jezik dugmad -->
+<div style="position: fixed; top: 10px; right: 10px;">
+    <button class="lang-btn" onclick="setLang('sr')">SR</button>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('de')">DE</button>
+</div>
+
+<!-- Navigacija -->
+<nav>
+    <button onclick="scrollToSection('tokarenje')" id="btn-tokarenje">Tokarenje</button>
+    <button onclick="scrollToSection('glodanje')" id="btn-glodanje">Glodanje</button>
+    <button onclick="scrollToSection('rezanje')" id="btn-rezanje">Rezanje Laserom</button>
+    <button onclick="scrollToSection('brusenje')" id="btn-brusenje">Brušenje</button>
+    <button onclick="scrollToSection('ostalo')" id="btn-ostalo">Ostale usluge</button>
+    <button onclick="scrollToSection('recenzije')" id="btn-recenzije">Recenzije</button>
 </nav>
 
-<section id="o-nama">
-  <h2>O Nama</h2>
-  <p>RadniciEU povezuje kvalifikovane radnike sa provjerenim poslodavcima u Njemačkoj i Austriji. Brzo, profesionalno i pouzdano.</p>
+<!-- Sekcije -->
+<section id="tokarenje">
+    <h2 id="h-tokarenje">Tokarenje</h2>
+    <img src="maonama.jpg" alt="Tokarenje">
+    <p id="p-tokarenje">Precizne usluge tokarenja za sve vrste metalnih komponenti.</p>
 </section>
 
-<section id="usluge">
-  <h2>Usluge</h2>
-  <p>Trenutno tražimo radnike za rad u Njemačkoj:</p>
-  <ul>
-    <li>Bravari</li>
-    <li>Varioci</li>
-    <li>Električari</li>
-    <li>Zidari</li>
-    <li>Tesari</li>
-    <li>Pomoćni radnici</li>
-  </ul>
-  <p>Satnica: 17–22 €/h</p>
+<section id="glodanje">
+    <h2 id="h-glodanje">Glodanje</h2>
+    <img src="povetna.jpg" alt="Glodanje">
+    <p id="p-glodanje">Visokokvalitetno glodanje sa modernim CNC mašinama.</p>
+</section>
+
+<section id="rezanje">
+    <h2 id="h-rezanje">Rezanje Laserom</h2>
+    <img src="maonama.jpg" alt="Rezanje Laserom">
+    <p id="p-rezanje">Brzo i precizno rezanje laserom za razne metale.</p>
+</section>
+
+<section id="brusenje">
+    <h2 id="h-brusenje">Brušenje</h2>
+    <img src="povetna.jpg" alt="Brušenje">
+    <p id="p-brusenje">Kvalitetno brušenje za savršenu završnu obradu.</p>
+</section>
+
+<section id="ostalo">
+    <h2 id="h-ostalo">Ostale metalne usluge</h2>
+    <img src="maonama.jpg" alt="Ostalo">
+    <p id="p-ostalo">Svi ostali metalni radovi po vašim potrebama.</p>
 </section>
 
 <section id="recenzije">
-  <h2>Recenzije</h2>
-  <p>Pročitajte iskustva naših kandidata koji su se zaposlili preko RadniciEU. Brzo, profesionalno i pouzdano.</p>
+    <h2 id="h-recenzije">Recenzije</h2>
+    <img src="recenzije.jpg" alt="Recenzije">
+    <p id="p-recenzije">Naši zadovoljni klijenti govore za nas.</p>
 </section>
 
-<section id="kontakt">
-  <h2>Kontakt</h2>
-  <p>Za prijavu ili dodatne informacije kontaktirajte nas:</p>
-  <p>Email: <a href="mailto:info@radnicieu.site">info@radnicieu.site</a></p>
-</section>
+<script>
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
 
-<footer>
-  <p>© 2026 RadniciEU. Sva prava zadržana.</p>
-</footer>
+    const texts = {
+        sr: {
+            'title': 'MCA2017 - Metalne Obrade',
+            'btn-tokarenje': 'Tokarenje',
+            'btn-glodanje': 'Glodanje',
+            'btn-rezanje': 'Rezanje Laserom',
+            'btn-brusenje': 'Brušenje',
+            'btn-ostalo': 'Ostale usluge',
+            'btn-recenzije': 'Recenzije',
+            'h-tokarenje': 'Tokarenje',
+            'p-tokarenje': 'Precizne usluge tokarenja za sve vrste metalnih komponenti.',
+            'h-glodanje': 'Glodanje',
+            'p-glodanje': 'Visokokvalitetno glodanje sa modernim CNC mašinama.',
+            'h-rezanje': 'Rezanje Laserom',
+            'p-rezanje': 'Brzo i precizno rezanje laserom za razne metale.',
+            'h-brusenje': 'Brušenje',
+            'p-brusenje': 'Kvalitetno brušenje za savršenu završnu obradu.',
+            'h-ostalo': 'Ostale metalne usluge',
+            'p-ostalo': 'Svi ostali metalni radovi po vašim potrebama.',
+            'h-recenzije': 'Recenzije',
+            'p-recenzije': 'Naši zadovoljni klijenti govore za nas.'
+        },
+        en: {
+            'title': 'MCA2017 - Metal Works',
+            'btn-tokarenje': 'Turning',
+            'btn-glodanje': 'Milling',
+            'btn-rezanje': 'Laser Cutting',
+            'btn-brusenje': 'Grinding',
+            'btn-ostalo': 'Other Services',
+            'btn-recenzije': 'Reviews',
+            'h-tokarenje': 'Turning',
+            'p-tokarenje': 'Precise turning services for all types of metal components.',
+            'h-glodanje': 'Milling',
+            'p-glodanje': 'High-quality milling with modern CNC machines.',
+            'h-rezanje': 'Laser Cutting',
+            'p-rezanje': 'Fast and precise laser cutting for various metals.',
+            'h-brusenje': 'Grinding',
+            'p-brusenje': 'Quality grinding for perfect finishing.',
+            'h-ostalo': 'Other Metal Services',
+            'p-ostalo': 'All other metalworks according to your needs.',
+            'h-recenzije': 'Reviews',
+            'p-recenzije': 'Our satisfied clients speak for us.'
+        },
+        de: {
+            'title': 'MCA2017 - Metallarbeiten',
+            'btn-tokarenje': 'Drehen',
+            'btn-glodanje': 'Fräsen',
+            'btn-rezanje': 'Laserschneiden',
+            'btn-brusenje': 'Schleifen',
+            'btn-ostalo': 'Weitere Dienstleistungen',
+            'btn-recenzije': 'Bewertungen',
+            'h-tokarenje': 'Drehen',
+            'p-tokarenje': 'Präzisionsdreharbeiten für alle Arten von Metallkomponenten.',
+            'h-glodanje': 'Fräsen',
+            'p-glodanje': 'Hochwertiges Fräsen mit modernen CNC-Maschinen.',
+            'h-rezanje': 'Laserschneiden',
+            'p-rezanje': 'Schnelles und präzises Laserschneiden für verschiedene Metalle.',
+            'h-brusenje': 'Schleifen',
+            'p-brusenje': 'Qualitatives Schleifen für perfekte Oberflächen.',
+            'h-ostalo': 'Weitere Metallarbeiten',
+            'p-ostalo': 'Alle anderen Metallarbeiten nach Ihren Bedürfnissen.',
+            'h-recenzije': 'Bewertungen',
+            'p-recenzije': 'Unsere zufriedenen Kunden sprechen für uns.'
+        }
+    };
+
+    function setLang(lang) {
+        for (let id in texts[lang]) {
+            let el = document.getElementById(id);
+            if (el) el.innerText = texts[lang][id];
+        }
+    }
+</script>
 
 </body>
 </html>
