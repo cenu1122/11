@@ -1,72 +1,75 @@
-import React from "react";
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NH Automatika</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; }
+    nav { background:#0f172a; color:white; padding:15px 30px; }
+    section { padding:60px 20px; }
+    .hero { background:#1e3a8a; color:white; text-align:center; padding:80px 20px; }
+    .light { background:#f1f5f9; }
+    footer { background:#0f172a; color:white; text-align:center; padding:20px; }
+    h1 { font-size:42px; }
+  </style>
+</head>
+<body>
 
-export default function AutomatikaWebsite() {
-  return (
-    <div style={{ fontFamily: "Arial, sans-serif", margin: 0, padding: 0 }}>
-      {/* NAVBAR */}
-      <nav style={{ background: "#0f172a", padding: "15px 30px", color: "white", position: "sticky", top: 0 }}>
-        <h2>NH Automatika</h2>
-      </nav>
+<nav>
+  <h2>NH Automatika</h2>
+</nav>
 
-      {/* HERO */}
-      <section style={{ background: "#1e3a8a", color: "white", padding: "80px 20px", textAlign: "center" }}>
-        <h1 style={{ fontSize: "42px", marginBottom: "20px" }}>Profesionalna Industrijska Automatika</h1>
-        <p style={{ fontSize: "18px" }}>
-          Projektovanje, instalacija i održavanje sistema automatike za industriju.
-        </p>
-      </section>
+<section class="hero">
+  <h1>Profesionalna Industrijska Automatika</h1>
+  <p>Projektovanje, instalacija i održavanje sistema automatike za industriju.</p>
+</section>
 
-      {/* O NAMA */}
-      <section style={{ padding: "60px 20px" }}>
-        <h2>O nama</h2>
-        <p style={{ maxWidth: "900px" }}>
-          NH Automatika je specijalizovana za industrijsku automatiku, PLC programiranje i modernizaciju proizvodnih sistema.
-          
-          Osnivač firme je Nusret Halilović, inženjer mašinstva sa preko deset godina iskustva u industriji.
-          Radio je u fabrici cementa u Lukavcu, kao HVAC administrator u kompaniji KBR, te u sektoru investicija i tehničke koordinacije projekata.
-          Specijalizovan je za tehničku analizu, upravljanje projektima i optimizaciju industrijskih procesa.
-        </p>
-      </section>
+<section>
+  <h2>O nama</h2>
+  <p>
+    NH Automatika je specijalizovana za industrijsku automatiku, PLC programiranje i modernizaciju proizvodnih sistema.
+    <br><br>
+    Osnivač firme je Nusret Halilović, inženjer mašinstva sa preko deset godina iskustva u industriji.
+    Radio je u fabrici cementa u Lukavcu, kao HVAC administrator u kompaniji KBR, te u sektoru investicija i tehničke koordinacije projekata.
+    Specijalizovan je za tehničku analizu, upravljanje projektima i optimizaciju industrijskih procesa.
+  </p>
+</section>
 
-      {/* USLUGE */}
-      <section style={{ background: "#f1f5f9", padding: "60px 20px" }}>
-        <h2>Usluge</h2>
-        <ul>
-          <li>PLC programiranje</li>
-          <li>Projektovanje elektro ormara</li>
-          <li>Automatizacija proizvodnih linija</li>
-          <li>Servis i održavanje sistema</li>
-        </ul>
-      </section>
+<section class="light">
+  <h2>Usluge</h2>
+  <ul>
+    <li>PLC programiranje</li>
+    <li>Projektovanje elektro ormara</li>
+    <li>Automatizacija proizvodnih linija</li>
+    <li>Servis i održavanje sistema</li>
+  </ul>
+</section>
 
-      {/* ZAŠTO MI */}
-      <section style={{ padding: "60px 20px" }}>
-        <h2>Zašto mi?</h2>
-        <ul>
-          <li>Višegodišnje industrijsko iskustvo</li>
-          <li>Pouzdana i moderna rješenja</li>
-          <li>Tehnička podrška i servis</li>
-        </ul>
-      </section>
+<section>
+  <h2>Zašto mi?</h2>
+  <ul>
+    <li>Višegodišnje industrijsko iskustvo</li>
+    <li>Pouzdana i moderna rješenja</li>
+    <li>Tehnička podrška i servis</li>
+  </ul>
+</section>
 
-      {/* RECENZIJE */}
-      <section style={{ background: "#f1f5f9", padding: "60px 20px" }}>
-        <h2>Recenzije</h2>
-        <p>"Izuzetno profesionalna usluga i brza realizacija projekta."</p>
-        <p>"Preporučujemo NH Automatiku za sve vrste automatizacije."</p>
-      </section>
+<section class="light">
+  <h2>Recenzije</h2>
+  <p>"Izuzetno profesionalna usluga i brza realizacija projekta."</p>
+  <p>"Preporučujemo NH Automatiku za sve vrste automatizacije."</p>
+</section>
 
-      {/* KONTAKT */}
-      <section style={{ padding: "60px 20px" }}>
-        <h2>Kontakt</h2>
-        <p>Telefon: +387 61 000 000</p>
-        <p>Email: info@nhautomatika.ba</p>
-      </section>
+<section>
+  <h2>Kontakt</h2>
+  <p>Telefon: +387 61 000 000</p>
+  <p>Email: info@nhautomatika.ba</p>
+</section>
 
-      {/* FOOTER */}
-      <footer style={{ background: "#0f172a", color: "white", textAlign: "center", padding: "20px" }}>
-        © {new Date().getFullYear()} NH Automatika – Sva prava zadržana
-      </footer>
-    </div>
-  );
-}
+<footer>
+  © 2026 NH Automatika – Sva prava zadržana
+</footer>
+
+</body>
+</html>
