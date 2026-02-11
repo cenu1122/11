@@ -1,158 +1,149 @@
-<!DOCTYPE html>
-<html lang="sr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCA2017 - Metalne Obrade</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin:0; padding:0; }
-        header { background: #333; color: #fff; padding: 20px; text-align:center; }
-        nav { display: flex; justify-content: center; background: #444; }
-        nav button { margin: 10px; padding: 10px 20px; cursor: pointer; border:none; background: #666; color: #fff; }
-        nav button:hover { background: #888; }
-        section { padding: 50px 20px; text-align:center; }
-        section img { max-width: 80%; height: auto; margin-top: 20px; }
-        .lang-btn { position: fixed; top: 10px; right: 10px; margin-left:5px; padding:5px 10px; cursor:pointer; }
-    </style>
-</head>
-<body>
+import React from "react";
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Phone, Mail, Settings, Wrench, Factory } from "lucide-react";
 
-<header>
-    <h1 id="title">MCA2017 - Metalne Obrade</h1>
-</header>
+export default function AutomatikaWebsite() {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-800">
+      {/* NAVBAR */}
+      <nav className="fixed w-full bg-white shadow-md z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <h1 className="text-2xl font-bold">NH Automatika</h1>
+          <div className="space-x-6 hidden md:flex">
+            <a href="#home" className="hover:text-blue-600">Početna</a>
+            <a href="#about" className="hover:text-blue-600">O nama</a>
+            <a href="#services" className="hover:text-blue-600">Usluge</a>
+            <a href="#why" className="hover:text-blue-600">Zašto mi</a>
+            <a href="#reviews" className="hover:text-blue-600">Recenzije</a>
+            <a href="#contact" className="hover:text-blue-600">Kontakt</a>
+          </div>
+        </div>
+      </nav>
 
-<!-- Jezik dugmad -->
-<div style="position: fixed; top: 10px; right: 10px;">
-    <button class="lang-btn" onclick="setLang('sr')">SR</button>
-    <button class="lang-btn" onclick="setLang('en')">EN</button>
-    <button class="lang-btn" onclick="setLang('de')">DE</button>
-</div>
+      {/* HERO */}
+      <section id="home" className="pt-28 pb-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-6xl font-bold mb-6"
+          >
+            Profesionalna Industrijska Automatika
+          </motion.h2>
+          <p className="text-lg md:text-xl mb-8">
+            Projektovanje, instalacija i održavanje sistema automatike za industriju.
+          </p>
+          <Button className="bg-white text-blue-700 text-lg px-8 py-6 rounded-2xl">
+            Zatražite ponudu
+          </Button>
+        </div>
+      </section>
 
-<!-- Navigacija -->
-<nav>
-    <button onclick="scrollToSection('tokarenje')" id="btn-tokarenje">Tokarenje</button>
-    <button onclick="scrollToSection('glodanje')" id="btn-glodanje">Glodanje</button>
-    <button onclick="scrollToSection('rezanje')" id="btn-rezanje">Rezanje Laserom</button>
-    <button onclick="scrollToSection('brusenje')" id="btn-brusenje">Brušenje</button>
-    <button onclick="scrollToSection('ostalo')" id="btn-ostalo">Ostale usluge</button>
-    <button onclick="scrollToSection('recenzije')" id="btn-recenzije">Recenzije</button>
-</nav>
+      {/* O NAMA */}
+      <section id="about" className="py-20">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 className="text-3xl font-bold mb-6">O nama</h3>
+            <p className="text-lg leading-relaxed">
+              NH Automatika je specijalizovana za industrijsku automatiku, PLC programiranje,
+              elektro instalacije i modernizaciju proizvodnih sistema. Sa dugogodišnjim iskustvom
+              u industriji nudimo pouzdana i efikasna rješenja.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-6">
+            <Factory size={60} className="text-blue-600" />
+            <Settings size={60} className="text-blue-600" />
+            <Wrench size={60} className="text-blue-600" />
+          </div>
+        </div>
+      </section>
 
-<!-- Sekcije -->
-<section id="tokarenje">
-    <h2 id="h-tokarenje">Tokarenje</h2>
-    <img src="maonama.jpg" alt="Tokarenje">
-    <p id="p-tokarenje">Precizne usluge tokarenja za sve vrste metalnih komponenti.</p>
-</section>
+      {/* USLUGE */}
+      <section id="services" className="py-20 bg-gray-100">
+        <div className="max-w-6xl mx-auto px-6">
+          <h3 className="text-3xl font-bold text-center mb-12">Naše usluge</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              "PLC Programiranje",
+              "Projektovanje elektro ormara",
+              "Servis i održavanje sistema",
+            ].map((service, index) => (
+              <Card key={index} className="rounded-2xl shadow-lg">
+                <CardContent className="p-6 text-center">
+                  <h4 className="text-xl font-semibold mb-4">{service}</h4>
+                  <p>
+                    Profesionalno rješenje prilagođeno vašim potrebama i industrijskim standardima.
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
 
-<section id="glodanje">
-    <h2 id="h-glodanje">Glodanje</h2>
-    <img src="povetna.jpg" alt="Glodanje">
-    <p id="p-glodanje">Visokokvalitetno glodanje sa modernim CNC mašinama.</p>
-</section>
+      {/* ZAŠTO MI */}
+      <section id="why" className="py-20">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h3 className="text-3xl font-bold mb-12">Zašto izabrati nas?</h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h4 className="text-xl font-semibold mb-3">Iskustvo</h4>
+              <p>Višegodišnje iskustvo u industrijskim sistemima i investicionim projektima.</p>
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold mb-3">Pouzdanost</h4>
+              <p>Garantujemo kvalitet, preciznost i poštovanje rokova.</p>
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold mb-3">Podrška</h4>
+              <p>Stalna tehnička podrška i servis za naše klijente.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="rezanje">
-    <h2 id="h-rezanje">Rezanje Laserom</h2>
-    <img src="maonama.jpg" alt="Rezanje Laserom">
-    <p id="p-rezanje">Brzo i precizno rezanje laserom za razne metale.</p>
-</section>
+      {/* RECENZIJE */}
+      <section id="reviews" className="py-20 bg-gray-100">
+        <div className="max-w-6xl mx-auto px-6">
+          <h3 className="text-3xl font-bold text-center mb-12">Recenzije klijenata</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="rounded-2xl shadow-md">
+              <CardContent className="p-6">
+                <p>"Izuzetno profesionalna usluga i brza realizacija projekta."</p>
+                <p className="mt-4 font-semibold">– Industrijski klijent</p>
+              </CardContent>
+            </Card>
+            <Card className="rounded-2xl shadow-md">
+              <CardContent className="p-6">
+                <p>"Preporučujemo NH Automatiku za sve vrste automatizacije."</p>
+                <p className="mt-4 font-semibold">– Proizvodna firma</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
 
-<section id="brusenje">
-    <h2 id="h-brusenje">Brušenje</h2>
-    <img src="povetna.jpg" alt="Brušenje">
-    <p id="p-brusenje">Kvalitetno brušenje za savršenu završnu obradu.</p>
-</section>
+      {/* KONTAKT */}
+      <section id="contact" className="py-20">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h3 className="text-3xl font-bold mb-8">Kontaktirajte nas</h3>
+          <div className="space-y-4 text-lg">
+            <p className="flex justify-center items-center gap-2"><Phone size={20}/> +387 61 000 000</p>
+            <p className="flex justify-center items-center gap-2"><Mail size={20}/> info@nhautomatika.ba</p>
+          </div>
+          <Button className="mt-8 px-8 py-6 text-lg rounded-2xl">
+            Pošaljite upit
+          </Button>
+        </div>
+      </section>
 
-<section id="ostalo">
-    <h2 id="h-ostalo">Ostale metalne usluge</h2>
-    <img src="maonama.jpg" alt="Ostalo">
-    <p id="p-ostalo">Svi ostali metalni radovi po vašim potrebama.</p>
-</section>
-
-<section id="recenzije">
-    <h2 id="h-recenzije">Recenzije</h2>
-    <img src="recenzije.jpg" alt="Recenzije">
-    <p id="p-recenzije">Naši zadovoljni klijenti govore za nas.</p>
-</section>
-
-<script>
-    function scrollToSection(id) {
-        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
-
-    const texts = {
-        sr: {
-            'title': 'MCA2017 - Metalne Obrade',
-            'btn-tokarenje': 'Tokarenje',
-            'btn-glodanje': 'Glodanje',
-            'btn-rezanje': 'Rezanje Laserom',
-            'btn-brusenje': 'Brušenje',
-            'btn-ostalo': 'Ostale usluge',
-            'btn-recenzije': 'Recenzije',
-            'h-tokarenje': 'Tokarenje',
-            'p-tokarenje': 'Precizne usluge tokarenja za sve vrste metalnih komponenti.',
-            'h-glodanje': 'Glodanje',
-            'p-glodanje': 'Visokokvalitetno glodanje sa modernim CNC mašinama.',
-            'h-rezanje': 'Rezanje Laserom',
-            'p-rezanje': 'Brzo i precizno rezanje laserom za razne metale.',
-            'h-brusenje': 'Brušenje',
-            'p-brusenje': 'Kvalitetno brušenje za savršenu završnu obradu.',
-            'h-ostalo': 'Ostale metalne usluge',
-            'p-ostalo': 'Svi ostali metalni radovi po vašim potrebama.',
-            'h-recenzije': 'Recenzije',
-            'p-recenzije': 'Naši zadovoljni klijenti govore za nas.'
-        },
-        en: {
-            'title': 'MCA2017 - Metal Works',
-            'btn-tokarenje': 'Turning',
-            'btn-glodanje': 'Milling',
-            'btn-rezanje': 'Laser Cutting',
-            'btn-brusenje': 'Grinding',
-            'btn-ostalo': 'Other Services',
-            'btn-recenzije': 'Reviews',
-            'h-tokarenje': 'Turning',
-            'p-tokarenje': 'Precise turning services for all types of metal components.',
-            'h-glodanje': 'Milling',
-            'p-glodanje': 'High-quality milling with modern CNC machines.',
-            'h-rezanje': 'Laser Cutting',
-            'p-rezanje': 'Fast and precise laser cutting for various metals.',
-            'h-brusenje': 'Grinding',
-            'p-brusenje': 'Quality grinding for perfect finishing.',
-            'h-ostalo': 'Other Metal Services',
-            'p-ostalo': 'All other metalworks according to your needs.',
-            'h-recenzije': 'Reviews',
-            'p-recenzije': 'Our satisfied clients speak for us.'
-        },
-        de: {
-            'title': 'MCA2017 - Metallarbeiten',
-            'btn-tokarenje': 'Drehen',
-            'btn-glodanje': 'Fräsen',
-            'btn-rezanje': 'Laserschneiden',
-            'btn-brusenje': 'Schleifen',
-            'btn-ostalo': 'Weitere Dienstleistungen',
-            'btn-recenzije': 'Bewertungen',
-            'h-tokarenje': 'Drehen',
-            'p-tokarenje': 'Präzisionsdreharbeiten für alle Arten von Metallkomponenten.',
-            'h-glodanje': 'Fräsen',
-            'p-glodanje': 'Hochwertiges Fräsen mit modernen CNC-Maschinen.',
-            'h-rezanje': 'Laserschneiden',
-            'p-rezanje': 'Schnelles und präzises Laserschneiden für verschiedene Metalle.',
-            'h-brusenje': 'Schleifen',
-            'p-brusenje': 'Qualitatives Schleifen für perfekte Oberflächen.',
-            'h-ostalo': 'Weitere Metallarbeiten',
-            'p-ostalo': 'Alle anderen Metallarbeiten nach Ihren Bedürfnissen.',
-            'h-recenzije': 'Bewertungen',
-            'p-recenzije': 'Unsere zufriedenen Kunden sprechen für uns.'
-        }
-    };
-
-    function setLang(lang) {
-        for (let id in texts[lang]) {
-            let el = document.getElementById(id);
-            if (el) el.innerText = texts[lang][id];
-        }
-    }
-</script>
-
-</body>
-</html>
+      {/* FOOTER */}
+      <footer className="bg-gray-800 text-white py-6 text-center">
+        © {new Date().getFullYear()} NH Automatika – Sva prava zadržana
+      </footer>
+    </div>
+  );
+}
