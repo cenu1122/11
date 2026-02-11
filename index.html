@@ -1,147 +1,70 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Phone, Mail, Settings, Wrench, Factory } from "lucide-react";
 
 export default function AutomatikaWebsite() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800">
+    <div style={{ fontFamily: "Arial, sans-serif", margin: 0, padding: 0 }}>
       {/* NAVBAR */}
-      <nav className="fixed w-full bg-white shadow-md z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold">NH Automatika</h1>
-          <div className="space-x-6 hidden md:flex">
-            <a href="#home" className="hover:text-blue-600">Početna</a>
-            <a href="#about" className="hover:text-blue-600">O nama</a>
-            <a href="#services" className="hover:text-blue-600">Usluge</a>
-            <a href="#why" className="hover:text-blue-600">Zašto mi</a>
-            <a href="#reviews" className="hover:text-blue-600">Recenzije</a>
-            <a href="#contact" className="hover:text-blue-600">Kontakt</a>
-          </div>
-        </div>
+      <nav style={{ background: "#0f172a", padding: "15px 30px", color: "white", position: "sticky", top: 0 }}>
+        <h2>NH Automatika</h2>
       </nav>
 
       {/* HERO */}
-      <section id="home" className="pt-28 pb-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-4xl md:text-6xl font-bold mb-6"
-          >
-            Profesionalna Industrijska Automatika
-          </motion.h2>
-          <p className="text-lg md:text-xl mb-8">
-            Projektovanje, instalacija i održavanje sistema automatike za industriju.
-          </p>
-          <Button className="bg-white text-blue-700 text-lg px-8 py-6 rounded-2xl">
-            Zatražite ponudu
-          </Button>
-        </div>
+      <section style={{ background: "#1e3a8a", color: "white", padding: "80px 20px", textAlign: "center" }}>
+        <h1 style={{ fontSize: "42px", marginBottom: "20px" }}>Profesionalna Industrijska Automatika</h1>
+        <p style={{ fontSize: "18px" }}>
+          Projektovanje, instalacija i održavanje sistema automatike za industriju.
+        </p>
       </section>
 
       {/* O NAMA */}
-      <section id="about" className="py-20">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h3 className="text-3xl font-bold mb-6">O nama</h3>
-            <p className="text-lg leading-relaxed">
-              NH Automatika je specijalizovana za industrijsku automatiku, PLC programiranje,
-              elektro instalacije i modernizaciju proizvodnih sistema. Sa dugogodišnjim iskustvom
-              u industriji nudimo pouzdana i efikasna rješenja.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-6">
-            <Factory size={60} className="text-blue-600" />
-            <Settings size={60} className="text-blue-600" />
-            <Wrench size={60} className="text-blue-600" />
-          </div>
-        </div>
+      <section style={{ padding: "60px 20px" }}>
+        <h2>O nama</h2>
+        <p style={{ maxWidth: "900px" }}>
+          NH Automatika je specijalizovana za industrijsku automatiku, PLC programiranje i modernizaciju proizvodnih sistema.
+          
+          Osnivač firme je Nusret Halilović, inženjer mašinstva sa preko deset godina iskustva u industriji.
+          Radio je u fabrici cementa u Lukavcu, kao HVAC administrator u kompaniji KBR, te u sektoru investicija i tehničke koordinacije projekata.
+          Specijalizovan je za tehničku analizu, upravljanje projektima i optimizaciju industrijskih procesa.
+        </p>
       </section>
 
       {/* USLUGE */}
-      <section id="services" className="py-20 bg-gray-100">
-        <div className="max-w-6xl mx-auto px-6">
-          <h3 className="text-3xl font-bold text-center mb-12">Naše usluge</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              "PLC Programiranje",
-              "Projektovanje elektro ormara",
-              "Servis i održavanje sistema",
-            ].map((service, index) => (
-              <Card key={index} className="rounded-2xl shadow-lg">
-                <CardContent className="p-6 text-center">
-                  <h4 className="text-xl font-semibold mb-4">{service}</h4>
-                  <p>
-                    Profesionalno rješenje prilagođeno vašim potrebama i industrijskim standardima.
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+      <section style={{ background: "#f1f5f9", padding: "60px 20px" }}>
+        <h2>Usluge</h2>
+        <ul>
+          <li>PLC programiranje</li>
+          <li>Projektovanje elektro ormara</li>
+          <li>Automatizacija proizvodnih linija</li>
+          <li>Servis i održavanje sistema</li>
+        </ul>
       </section>
 
       {/* ZAŠTO MI */}
-      <section id="why" className="py-20">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h3 className="text-3xl font-bold mb-12">Zašto izabrati nas?</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <h4 className="text-xl font-semibold mb-3">Iskustvo</h4>
-              <p>Višegodišnje iskustvo u industrijskim sistemima i investicionim projektima.</p>
-            </div>
-            <div>
-              <h4 className="text-xl font-semibold mb-3">Pouzdanost</h4>
-              <p>Garantujemo kvalitet, preciznost i poštovanje rokova.</p>
-            </div>
-            <div>
-              <h4 className="text-xl font-semibold mb-3">Podrška</h4>
-              <p>Stalna tehnička podrška i servis za naše klijente.</p>
-            </div>
-          </div>
-        </div>
+      <section style={{ padding: "60px 20px" }}>
+        <h2>Zašto mi?</h2>
+        <ul>
+          <li>Višegodišnje industrijsko iskustvo</li>
+          <li>Pouzdana i moderna rješenja</li>
+          <li>Tehnička podrška i servis</li>
+        </ul>
       </section>
 
       {/* RECENZIJE */}
-      <section id="reviews" className="py-20 bg-gray-100">
-        <div className="max-w-6xl mx-auto px-6">
-          <h3 className="text-3xl font-bold text-center mb-12">Recenzije klijenata</h3>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="rounded-2xl shadow-md">
-              <CardContent className="p-6">
-                <p>"Izuzetno profesionalna usluga i brza realizacija projekta."</p>
-                <p className="mt-4 font-semibold">– Industrijski klijent</p>
-              </CardContent>
-            </Card>
-            <Card className="rounded-2xl shadow-md">
-              <CardContent className="p-6">
-                <p>"Preporučujemo NH Automatiku za sve vrste automatizacije."</p>
-                <p className="mt-4 font-semibold">– Proizvodna firma</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
+      <section style={{ background: "#f1f5f9", padding: "60px 20px" }}>
+        <h2>Recenzije</h2>
+        <p>"Izuzetno profesionalna usluga i brza realizacija projekta."</p>
+        <p>"Preporučujemo NH Automatiku za sve vrste automatizacije."</p>
       </section>
 
       {/* KONTAKT */}
-      <section id="contact" className="py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h3 className="text-3xl font-bold mb-8">Kontaktirajte nas</h3>
-          <div className="space-y-4 text-lg">
-            <p className="flex justify-center items-center gap-2"><Phone size={20}/> +387 61 000 000</p>
-            <p className="flex justify-center items-center gap-2"><Mail size={20}/> info@nhautomatika.ba</p>
-          </div>
-          <Button className="mt-8 px-8 py-6 text-lg rounded-2xl">
-            Pošaljite upit
-          </Button>
-        </div>
+      <section style={{ padding: "60px 20px" }}>
+        <h2>Kontakt</h2>
+        <p>Telefon: +387 61 000 000</p>
+        <p>Email: info@nhautomatika.ba</p>
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-gray-800 text-white py-6 text-center">
+      <footer style={{ background: "#0f172a", color: "white", textAlign: "center", padding: "20px" }}>
         © {new Date().getFullYear()} NH Automatika – Sva prava zadržana
       </footer>
     </div>
